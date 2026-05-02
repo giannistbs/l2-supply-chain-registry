@@ -38,6 +38,10 @@ coverage/
 .nyc_output/
 *.tsbuildinfo
 .eslintcache
+.npm/
+.pnpm-store/
+.yarn/
+*.tgz
 
 # Python caches and virtual environments
 __pycache__/
@@ -69,6 +73,22 @@ artifacts/
 cache/
 typechain/
 typechain-types/
+
+# CLI dependencies, build output, and local runtime files
+cli/node_modules/
+cli/dist/
+cli/build/
+cli/coverage/
+cli/.nyc_output/
+cli/.tsx-cache/
+cli/*.tsbuildinfo
+cli/.env
+cli/.env.*
+!cli/.env.example
+cli/npm-debug.log*
+cli/yarn-debug.log*
+cli/yarn-error.log*
+cli/pnpm-debug.log*
 
 # Generated benchmark and runtime outputs
 bench/results/
