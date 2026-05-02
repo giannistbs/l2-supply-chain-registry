@@ -1,3 +1,33 @@
+# Foundry generated artifacts
 out/
 cache/
 broadcast/
+.forge-snapshots/
+gas-report.txt
+.gas-snapshot
+coverage/
+lcov.info
+
+# Local dependencies
+lib/
+dependencies/
+node_modules/
+
+# EVM tooling output
+artifacts/
+typechain/
+typechain-types/
+crytic-export/
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Editor and OS noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
