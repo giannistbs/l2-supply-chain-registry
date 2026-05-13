@@ -1,0 +1,22 @@
+{
+  "name": "@thesis/bench",
+  "version": "0.1.0",
+  "description": "Benchmark harness",
+  "main": "src/run-all.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "ethers": "^6.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
