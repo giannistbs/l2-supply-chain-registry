@@ -14,22 +14,19 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const RESULTS_DIR = resolve(__dirname, "..", "results");
 
 interface RegistryFile {
-  methodology?: string;
-  network?: string;
-  ethUsdPrice?: number;
+  methodology: "anvil-gas-mainnet-fee-model";
   tx: Array<{
     op: string;
     network: string;
     gasUsed: string;
     txConfirmMs: number;
-    usdCost?: number;
-    l2ExecutionUsd?: number;
-    l1DataUsd?: number;
-    totalUsd?: number;
-    l2ExecutionFeeWei?: string;
-    l1DataFeeWei?: string;
-    totalFeeWei?: string;
-    serializedTxBytes?: number;
+    l2ExecutionUsd: number;
+    l1DataUsd: number;
+    totalUsd: number;
+    l2ExecutionFeeWei: string;
+    l1DataFeeWei: string;
+    totalFeeWei: string;
+    serializedTxBytes: number;
   }>;
   read: Array<{ op: string; rpcLatencyMs: number }>;
 }
@@ -92,19 +89,12 @@ function toCsv(rows: Row[]): string {
 
 function main() {
   const files = readdirSync(RESULTS_DIR).filter((f) => f.endsWith(".json"));
-  const modeledRegistryFiles = files
-    .filter((f) => f.startsWith("registry-modeled-"))
-    .sort();
-  const latestModeledRegistryFile = modeledRegistryFiles.at(-1);
   const rows: Row[] = [];
   const publishMedianUsdByNetwork: Record<string, number> = {};
 
   for (const f of files) {
     const path = join(RESULTS_DIR, f);
-    if (f.startsWith("registry-")) {
-      if (f.startsWith("registry-modeled-") && latestModeledRegistryFile && f !== latestModeledRegistryFile) {
-        continue;
-      }
+    if (f.startsWith("registry-modeled-")) {
       const data = loadJson<RegistryFile>(path);
       const byOp = new Map<string, {
         gas: number[];
@@ -118,7 +108,7 @@ function main() {
         serializedBytes: number[];
       }>();
       for (const t of data.tx) {
-        const network = t.network ?? data.network ?? "unknown";
+        const network = t.network;
         const key = `${network}/${t.op}`;
         if (!byOp.has(key)) {
           byOp.set(key, {
@@ -136,14 +126,13 @@ function main() {
         const b = byOp.get(key)!;
         b.gas.push(Number(t.gasUsed));
         b.latency.push(t.txConfirmMs);
-        if (t.totalUsd !== undefined) b.totalUsd.push(t.totalUsd);
-        if (t.usdCost !== undefined) b.totalUsd.push(t.usdCost);
-        if (t.l2ExecutionUsd !== undefined) b.l2Usd.push(t.l2ExecutionUsd);
-        if (t.l1DataUsd !== undefined) b.l1Usd.push(t.l1DataUsd);
-        if (t.l2ExecutionFeeWei !== undefined) b.l2Wei.push(Number(t.l2ExecutionFeeWei));
-        if (t.l1DataFeeWei !== undefined) b.l1Wei.push(Number(t.l1DataFeeWei));
-        if (t.totalFeeWei !== undefined) b.totalWei.push(Number(t.totalFeeWei));
-        if (t.serializedTxBytes !== undefined) b.serializedBytes.push(t.serializedTxBytes);
+        b.totalUsd.push(t.totalUsd);
+        b.l2Usd.push(t.l2ExecutionUsd);
+        b.l1Usd.push(t.l1DataUsd);
+        b.l2Wei.push(Number(t.l2ExecutionFeeWei));
+        b.l1Wei.push(Number(t.l1DataFeeWei));
+        b.totalWei.push(Number(t.totalFeeWei));
+        b.serializedBytes.push(t.serializedTxBytes);
       }
       for (const [key, b] of byOp.entries()) {
         const slash = key.indexOf("/");
@@ -158,47 +147,35 @@ function main() {
           unit: "ms",
           stats: statsOf(b.latency),
         });
-        if (b.l2Usd.length) {
-          rows.push({
-            source: "registry",
-            network,
-            op,
-            metric: "l2ExecutionUsd",
-            unit: "USD",
-            stats: statsOf(b.l2Usd),
-          });
-        }
-        if (b.l1Usd.length) {
-          rows.push({
-            source: "registry",
-            network,
-            op,
-            metric: "l1DataUsd",
-            unit: "USD",
-            stats: statsOf(b.l1Usd),
-          });
-        }
         rows.push({
           source: "registry",
           network,
           op,
-          metric: data.methodology ? "totalUsd" : "usdCostLegacy",
+          metric: "l2ExecutionUsd",
+          unit: "USD",
+          stats: statsOf(b.l2Usd),
+        });
+        rows.push({
+          source: "registry",
+          network,
+          op,
+          metric: "l1DataUsd",
+          unit: "USD",
+          stats: statsOf(b.l1Usd),
+        });
+        rows.push({
+          source: "registry",
+          network,
+          op,
+          metric: "totalUsd",
           unit: "USD",
           stats: statsOf(b.totalUsd),
         });
-        if (b.l2Wei.length) {
-          rows.push({ source: "registry", network, op, metric: "l2ExecutionFeeWei", unit: "wei", stats: statsOf(b.l2Wei) });
-        }
-        if (b.l1Wei.length) {
-          rows.push({ source: "registry", network, op, metric: "l1DataFeeWei", unit: "wei", stats: statsOf(b.l1Wei) });
-        }
-        if (b.totalWei.length) {
-          rows.push({ source: "registry", network, op, metric: "totalFeeWei", unit: "wei", stats: statsOf(b.totalWei) });
-        }
-        if (b.serializedBytes.length) {
-          rows.push({ source: "registry", network, op, metric: "serializedTxBytes", unit: "bytes", stats: statsOf(b.serializedBytes) });
-        }
-        if (op === "publishVersion" && data.methodology === "anvil-gas-mainnet-fee-model") {
+        rows.push({ source: "registry", network, op, metric: "l2ExecutionFeeWei", unit: "wei", stats: statsOf(b.l2Wei) });
+        rows.push({ source: "registry", network, op, metric: "l1DataFeeWei", unit: "wei", stats: statsOf(b.l1Wei) });
+        rows.push({ source: "registry", network, op, metric: "totalFeeWei", unit: "wei", stats: statsOf(b.totalWei) });
+        rows.push({ source: "registry", network, op, metric: "serializedTxBytes", unit: "bytes", stats: statsOf(b.serializedBytes) });
+        if (op === "publishVersion") {
           publishMedianUsdByNetwork[network] = statsOf(b.totalUsd).median;
         }
       }
@@ -206,7 +183,7 @@ function main() {
       if (reads.length) {
         rows.push({
           source: "registry",
-          network: data.network ?? "anvil",
+          network: "anvil",
           op: "verifyVersion",
           metric: "rpcLatencyMs",
           unit: "ms",
