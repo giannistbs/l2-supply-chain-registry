@@ -1,5 +1,9 @@
 # L2 Package Integrity Registry
 
+[![Solidity](https://img.shields.io/badge/Solidity-0.8.24-363636?logo=solidity&logoColor=white)](https://soliditylang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+
 A minimal package integrity registry built on Ethereum Layer 2. Maintainers
 register `(package_name, version) -> SHA-256 hash` bindings on-chain; clients
 verify any downloaded artifact by hashing it locally and comparing against
