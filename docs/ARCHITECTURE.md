@@ -117,6 +117,4 @@ contracts/    Foundry project (Solidity 0.8.24)
 cli/          TypeScript CLI (ethers v6, commander)
 bench/        TypeScript benchmark harness + results/
 docs/         Thesis-reference docs (this file, THREAT_MODEL.md)
-plan.md       Full implementation plan
-claude.md     Project context for the coding assistant
 ```
