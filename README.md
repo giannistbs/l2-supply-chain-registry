@@ -85,13 +85,11 @@ Then exercise the full flow with the CLI:
 ```bash
 cd cli
 
-# Enroll the signer as a maintainer
-node dist/index.js register-maintainer --network anvil
-
-# Register a package, publish a version, verify it
-node dist/index.js register   my-package                       --network anvil
-node dist/index.js publish    my-package 1.0.0 ./artifact.tgz  --network anvil
-node dist/index.js verify     my-package 1.0.0 ./artifact.tgz  --network anvil
+# Register a package (enrolling the signer as a maintainer on first use),
+# publish a version, then verify it
+node dist/index.js register   my-package --ensure-maintainer    --network anvil
+node dist/index.js publish    my-package 1.0.0 ./artifact.tgz   --network anvil
+node dist/index.js verify     my-package 1.0.0 ./artifact.tgz   --network anvil
 ```
 
 `verify` exits with code `0` on hash match and `1` on mismatch, so it can be
