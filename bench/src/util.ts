@@ -39,15 +39,26 @@ export function writeJson(path: string, data: unknown): void {
 }
 
 export async function fetchEthUsdPrice(): Promise<number> {
+  let json: { ethereum?: { usd?: number } };
   try {
     const res = await fetch(
       "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd",
     );
-    const json = (await res.json()) as { ethereum?: { usd?: number } };
-    return json.ethereum?.usd ?? 0;
-  } catch {
-    return 0;
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    json = (await res.json()) as { ethereum?: { usd?: number } };
+  } catch (err) {
+    throw new Error(
+      `Failed to fetch ETH/USD price from CoinGecko: ${err instanceof Error ? err.message : String(err)}. ` +
+        `Aborting so USD figures are not silently zeroed.`,
+    );
   }
+  const price = json.ethereum?.usd;
+  if (!price || price <= 0) {
+    throw new Error(
+      `CoinGecko returned an invalid ETH/USD price (${price}). Aborting so USD figures are not silently zeroed.`,
+    );
+  }
+  return price;
 }
 
 export function nowIso(): string {
