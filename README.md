@@ -23,7 +23,7 @@ Three layers, separated by responsibility:
 | ----------- | ------------------------------------------------------------ | ------------------------------------------- |
 | Storage     | Hosts package binaries (publisher-managed)                   | Off-chain: CDN, GitHub Releases, S3, etc.   |
 | Integrity   | Maps `(package, version)` to `(contentHash, owner, timestamp, revoked)` | `PackageRegistry.sol` on an L2          |
-| Identity    | Authenticates maintainers                                    | `DIDAuth.sol` (`did:ethr`, opt-in)          |
+| Identity    | Authenticates maintainers                                    | `did:ethr` (`msg.sender` is the DID subject) |
 
 The contract is **storage-agnostic**: it never stores artifacts, only their
 SHA-256 digests. Anyone holding the artifact can independently verify its
@@ -33,7 +33,7 @@ integrity against the on-chain hash.
 
 ```
 contracts/    Foundry project (Solidity 0.8.24)
-  src/        PackageRegistry.sol, DIDAuth.sol, interfaces/
+  src/        PackageRegistry.sol, interfaces/
   test/       Foundry unit tests
   script/     Deployment script
 cli/          TypeScript CLI (ethers v6, commander)
@@ -85,9 +85,8 @@ Then exercise the full flow with the CLI:
 ```bash
 cd cli
 
-# Register a package (enrolling the signer as a maintainer on first use),
-# publish a version, then verify it
-node dist/index.js register   my-package --ensure-maintainer    --network anvil
+# Register a package, publish a version, then verify it
+node dist/index.js register   my-package                        --network anvil
 node dist/index.js publish    my-package 1.0.0 ./artifact.tgz   --network anvil
 node dist/index.js verify     my-package 1.0.0 ./artifact.tgz   --network anvil
 ```

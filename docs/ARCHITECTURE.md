@@ -8,7 +8,7 @@ The system is a three-layer package integrity registry:
 | ----------- | ------------------------------------------------------------ | ---------------------------------- |
 | Storage     | Hosts package binaries (publisher-managed)                   | CDN, GitHub Releases, S3, etc. (off-chain) |
 | Integrity   | Maps `(package, version)` → `(contentHash, owner, timestamp, revoked)` | `PackageRegistry.sol` on an L2     |
-| Identity    | Authenticates maintainers                                    | `DIDAuth.sol` (did:ethr opt-in)    |
+| Identity    | Authenticates maintainers                                    | `did:ethr` (`msg.sender` is the DID subject) |
 
 The contract is **storage-agnostic**: it never stores artifacts, only their
 SHA-256 digests. Anyone holding the artifact can independently verify its
@@ -35,8 +35,8 @@ Functions:
 
 | Function                                          | Caller constraint                   | State changes                                               |
 | ------------------------------------------------- | ----------------------------------- | ----------------------------------------------------------- |
-| `registerPackage(name)`                           | Must be registered maintainer       | Creates package, sets `msg.sender` as owner                 |
-| `publishVersion(name, version, contentHash)`      | Registered maintainer AND owner     | Stores hash + timestamp, appends to version list            |
+| `registerPackage(name)`                           | Anyone                              | Creates package, sets `msg.sender` as owner                 |
+| `publishVersion(name, version, contentHash)`      | Current owner                       | Stores hash + timestamp, appends to version list            |
 | `verifyVersion(name, version)` (view)             | Anyone                              | Returns hash, owner, timestamp, revoked                     |
 | `transferOwnership(name, newOwner)`               | Current owner                       | Changes `owner`                                              |
 | `revokeVersion(name, version)`                    | Current owner                       | Sets `revoked = true`                                       |
@@ -52,13 +52,13 @@ repeatedly reading storage.
 - Names are not validated (typosquatting prevention is out of scope).
 - No upgradeability. If the contract needs changes, a new deployment is made.
 
-### `DIDAuth.sol`
+### Identity (`did:ethr`)
 
 did:ethr identities are Ethereum addresses, so `msg.sender` is the DID subject.
-`DIDAuth` adds a lightweight opt-in layer: maintainers self-register via
-`registerMaintainer()`, and the `onlyRegisteredMaintainer` modifier gates
-`registerPackage` and `publishVersion`. This provides a clear, inspectable
-list of who has asserted they are a maintainer.
+Authority over a package is first-come: the address that calls
+`registerPackage` becomes the package `owner`, and the `onlyOwnerOf` modifier
+gates `publishVersion`, `transferOwnership`, and `revokeVersion`. No off-chain
+identity provider is involved.
 
 did:ethr delegate support (authorizing a secondary signing key via the
 ERC-1056 `EthereumDIDRegistry` without transferring ownership) is a possible
