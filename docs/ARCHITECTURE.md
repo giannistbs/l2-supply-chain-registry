@@ -60,9 +60,9 @@ did:ethr identities are Ethereum addresses, so `msg.sender` is the DID subject.
 `registerPackage` and `publishVersion`. This provides a clear, inspectable
 list of who has asserted they are a maintainer.
 
-A stretch goal is delegate support via the deployed `EthereumDIDRegistry` at
-`0xdCa7EF03e98e0DC2B855bE647C39ABe984fcF21B`, letting a maintainer authorize
-secondary signing keys without transferring ownership.
+did:ethr delegate support (authorizing a secondary signing key via the
+ERC-1056 `EthereumDIDRegistry` without transferring ownership) is a possible
+future extension; it is not part of the implemented artifact.
 
 ## CLI
 

@@ -23,8 +23,7 @@ const commonNetworkOpts = (cmd: Command) =>
 commonNetworkOpts(
   program
     .command("register <name>")
-    .description("register a new package name")
-    .option("--ensure-maintainer", "auto-register caller as did:ethr maintainer first", false),
+    .description("register a new package name"),
 ).action((name, opts) => registerCommand(name, opts));
 
 commonNetworkOpts(

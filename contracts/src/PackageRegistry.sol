@@ -2,7 +2,6 @@
 pragma solidity ^0.8.24;
 
 import {IPackageRegistry} from "./interfaces/IPackageRegistry.sol";
-import {DIDAuth} from "./DIDAuth.sol";
 
 /// @title PackageRegistry
 /// @author Ioannis Tampakis
@@ -10,10 +9,12 @@ import {DIDAuth} from "./DIDAuth.sol";
 ///         content hash together with the publishing maintainer's address and a
 ///         timestamp. Hashes are computed off-chain by the client (SHA-256) and
 ///         submitted as bytes32.
-/// @dev Maintainer authentication is enforced via the DIDAuth module: publishers
-///      must have self-registered as did:ethr maintainers. Package-level ownership
-///      is enforced by comparing `msg.sender` against the stored owner address.
-contract PackageRegistry is IPackageRegistry, DIDAuth {
+/// @dev Identity follows did:ethr: the caller's Ethereum address (`msg.sender`) is
+///      the DID subject. Admission is first-come per package: the address that
+///      registers a name becomes its owner, and version publication, revocation,
+///      and ownership transfer are gated by comparing `msg.sender` against that
+///      stored owner address.
+contract PackageRegistry is IPackageRegistry {
     struct Version {
         bytes32 contentHash;
         uint256 timestamp;
@@ -46,7 +47,7 @@ contract PackageRegistry is IPackageRegistry, DIDAuth {
     }
 
     /// @inheritdoc IPackageRegistry
-    function registerPackage(string calldata name) external override onlyRegisteredMaintainer {
+    function registerPackage(string calldata name) external override {
         if (bytes(name).length == 0) revert EmptyString();
         Package storage pkg = _packages[name];
         if (pkg.exists) revert PackageAlreadyExists(name);
@@ -59,7 +60,6 @@ contract PackageRegistry is IPackageRegistry, DIDAuth {
     function publishVersion(string calldata name, string calldata version, bytes32 contentHash)
         external
         override
-        onlyRegisteredMaintainer
         onlyOwnerOf(name)
     {
         if (bytes(version).length == 0) revert EmptyString();

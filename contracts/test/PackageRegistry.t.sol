@@ -3,7 +3,6 @@ pragma solidity ^0.8.24;
 
 import {Test} from "forge-std/Test.sol";
 import {PackageRegistry} from "../src/PackageRegistry.sol";
-import {DIDAuth} from "../src/DIDAuth.sol";
 import {IPackageRegistry} from "../src/interfaces/IPackageRegistry.sol";
 
 contract PackageRegistryTest is Test {
@@ -21,10 +20,6 @@ contract PackageRegistryTest is Test {
 
     function setUp() public {
         registry = new PackageRegistry();
-        vm.prank(alice);
-        registry.registerMaintainer();
-        vm.prank(bob);
-        registry.registerMaintainer();
     }
 
     // --- registerPackage ---
@@ -55,10 +50,11 @@ contract PackageRegistryTest is Test {
         registry.registerPackage("");
     }
 
-    function test_registerPackage_unregisteredMaintainer_reverts() public {
+    function test_registerPackage_anyAddressCanRegister() public {
         vm.prank(carol);
-        vm.expectRevert(abi.encodeWithSelector(DIDAuth.NotRegisteredMaintainer.selector, carol));
         registry.registerPackage(NAME);
+        (address owner,,) = registry.getPackage(NAME);
+        assertEq(owner, carol);
     }
 
     // --- publishVersion ---

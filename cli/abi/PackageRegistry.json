@@ -1,13 +1,6 @@
 [
   {
     "type": "function",
-    "name": "deregisterMaintainer",
-    "inputs": [],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
     "name": "getPackage",
     "inputs": [
       {
@@ -31,25 +24,6 @@
         "name": "versionCount",
         "type": "uint256",
         "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "isRegisteredMaintainer",
-    "inputs": [
-      {
-        "name": "",
-        "type": "address",
-        "internalType": "address"
-      }
-    ],
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool",
-        "internalType": "bool"
       }
     ],
     "stateMutability": "view"
@@ -93,13 +67,6 @@
         "internalType": "bytes32"
       }
     ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "registerMaintainer",
-    "inputs": [],
     "outputs": [],
     "stateMutability": "nonpayable"
   },
@@ -190,32 +157,6 @@
       }
     ],
     "stateMutability": "view"
-  },
-  {
-    "type": "event",
-    "name": "MaintainerDeregistered",
-    "inputs": [
-      {
-        "name": "maintainer",
-        "type": "address",
-        "indexed": true,
-        "internalType": "address"
-      }
-    ],
-    "anonymous": false
-  },
-  {
-    "type": "event",
-    "name": "MaintainerRegistered",
-    "inputs": [
-      {
-        "name": "maintainer",
-        "type": "address",
-        "indexed": true,
-        "internalType": "address"
-      }
-    ],
-    "anonymous": false
   },
   {
     "type": "event",
@@ -319,17 +260,6 @@
   },
   {
     "type": "error",
-    "name": "AlreadyRegistered",
-    "inputs": [
-      {
-        "name": "caller",
-        "type": "address",
-        "internalType": "address"
-      }
-    ]
-  },
-  {
-    "type": "error",
     "name": "EmptyString",
     "inputs": []
   },
@@ -342,28 +272,6 @@
         "type": "string",
         "internalType": "string"
       },
-      {
-        "name": "caller",
-        "type": "address",
-        "internalType": "address"
-      }
-    ]
-  },
-  {
-    "type": "error",
-    "name": "NotRegistered",
-    "inputs": [
-      {
-        "name": "caller",
-        "type": "address",
-        "internalType": "address"
-      }
-    ]
-  },
-  {
-    "type": "error",
-    "name": "NotRegisteredMaintainer",
-    "inputs": [
       {
         "name": "caller",
         "type": "address",

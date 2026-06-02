@@ -213,8 +213,6 @@ async function main() {
   const wallet = new Wallet(getPrivateKey(), anvilProvider);
   const signerAddr = await wallet.getAddress();
   const contract = new Contract(anvil.contractAddress, ABI, wallet) as unknown as {
-    registerMaintainer: (opts?: object) => Promise<ContractTransactionResponse>;
-    isRegisteredMaintainer: (a: string) => Promise<boolean>;
     registerPackage: (n: string, opts?: object) => Promise<ContractTransactionResponse>;
     publishVersion: (n: string, v: string, h: string, opts?: object) => Promise<ContractTransactionResponse>;
     verifyVersion: (n: string, v: string) => Promise<[string, string, bigint, boolean]>;
@@ -252,12 +250,6 @@ async function main() {
     tx: [],
     read: [],
   };
-
-  if (!(await contract.isRegisteredMaintainer(signerAddr))) {
-    console.log("Registering maintainer on local Anvil (one-time setup)...");
-    const n = await getNonce(anvilProvider, signerAddr);
-    await (await contract.registerMaintainer({ nonce: n })).wait();
-  }
 
   const sink = Wallet.createRandom().address;
 

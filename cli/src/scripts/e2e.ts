@@ -3,7 +3,7 @@
  *
  * Scenario:
  *  1. Expects PackageRegistry already deployed (address via env or --contract)
- *  2. Register maintainer + package
+ *  2. Register package
  *  3. Create a ~50KB dummy tarball, publish version 1.0.0, verify MATCH
  *  4. Tamper with the tarball, verify MISMATCH
  *  5. Transfer ownership to a second account, old owner cannot publish
@@ -62,14 +62,6 @@ async function main() {
     const tx = await fn(nonce);
     await tx.wait();
     await new Promise((r) => setTimeout(r, 50));
-  }
-
-  console.log("[e2e] Registering maintainers...");
-  if (!(await registryAlice.isRegisteredMaintainer(await alice.getAddress()))) {
-    await send(alice, (nonce) => registryAlice.registerMaintainer({ nonce }));
-  }
-  if (!(await registryBob.isRegisteredMaintainer(await bob.getAddress()))) {
-    await send(bob, (nonce) => registryBob.registerMaintainer({ nonce }));
   }
 
   console.log(`[e2e] 1) registerPackage(${NAME})`);
