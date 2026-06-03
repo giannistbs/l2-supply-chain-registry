@@ -9,12 +9,6 @@ register `(package_name, version) -> SHA-256 hash` bindings on-chain; clients
 verify any downloaded artifact by hashing it locally and comparing against
 the on-chain record.
 
-## Status
-
-This repository is the research artifact accompanying my bachelor's thesis.
-It is a benchmarking artifact and not a production package registry. The surface
-area is deliberately kept small.
-
 ## Architecture
 
 Three layers, separated by responsibility:
