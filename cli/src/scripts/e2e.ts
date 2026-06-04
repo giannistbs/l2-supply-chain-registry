@@ -7,7 +7,7 @@
  *  3. Create a ~50KB dummy tarball, publish version 1.0.0, verify MATCH
  *  4. Tamper with the tarball, verify MISMATCH
  *  5. Transfer ownership to a second account, old owner cannot publish
- *  6. New owner revokes 1.0.0, verify shows revoked=true
+ *  6. New owner revokes 1.0.0, CLI verify rejects the revoked version
  *
  * Run with:  REGISTRY_PRIVATE_KEY=... ANVIL_REGISTRY_ADDRESS=... npm run e2e
  * Or pass key1 / key2 via env: ANVIL_KEY_0, ANVIL_KEY_1
@@ -18,6 +18,7 @@ import { join } from "node:path";
 import { Contract, JsonRpcProvider, Wallet, type InterfaceAbi } from "ethers";
 import { computeSHA256 } from "../lib/hash.js";
 import { REGISTRY_ABI } from "../lib/contract.js";
+import { verifyCommand } from "../commands/verify.js";
 
 const ANVIL_RPC = process.env.ANVIL_RPC_URL ?? "http://127.0.0.1:8545";
 const ADDR = process.env.ANVIL_REGISTRY_ADDRESS;
@@ -48,6 +49,7 @@ async function main() {
 
   const NAME = `test-pkg-${Date.now()}`;
   const V1 = "1.0.0";
+  process.env.REGISTRY_PRIVATE_KEY ??= KEY0;
 
   console.log(`[e2e] Using registry ${ADDR}`);
   console.log(`[e2e] Alice: ${await alice.getAddress()}`);
@@ -83,6 +85,12 @@ async function main() {
   const [h1, , , revoked1] = await registryAlice.verifyVersion(NAME, V1);
   assert(h1.toLowerCase() === hash.toLowerCase(), "on-chain hash should match local");
   assert(!revoked1, "should not yet be revoked");
+  const matchExit = await verifyCommand(NAME, V1, tarballPath, {
+    network: "anvil",
+    contract: ADDR,
+    rpcUrl: ANVIL_RPC,
+  });
+  assert(matchExit === 0, "CLI verify should exit 0 for a matching active record");
 
   console.log("[e2e] 5) tamper + verify MISMATCH");
   const tampered = Buffer.from(readFileSync(tarballPath));
@@ -93,6 +101,12 @@ async function main() {
   assert(tHash !== hash, "tampered hash should differ");
   const [h2] = await registryAlice.verifyVersion(NAME, V1);
   assert(h2.toLowerCase() !== tHash.toLowerCase(), "tampered file should not match on-chain");
+  const mismatchExit = await verifyCommand(NAME, V1, tamperedPath, {
+    network: "anvil",
+    contract: ADDR,
+    rpcUrl: ANVIL_RPC,
+  });
+  assert(mismatchExit === 1, "CLI verify should exit 1 for a mismatching record");
   console.log(`    tampered = ${tHash}`);
   console.log(`    on-chain = ${h2}`);
 
@@ -118,6 +132,12 @@ async function main() {
   console.log("[e2e] 9) verify shows revoked=true");
   const [, , , revoked2] = await registryBob.verifyVersion(NAME, V1);
   assert(revoked2, "should be revoked");
+  const revokedExit = await verifyCommand(NAME, V1, tarballPath, {
+    network: "anvil",
+    contract: ADDR,
+    rpcUrl: ANVIL_RPC,
+  });
+  assert(revokedExit === 1, "CLI verify should exit 1 for a revoked record even when hashes match");
 
   console.log("[e2e] PASS");
 }
