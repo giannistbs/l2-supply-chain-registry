@@ -23,6 +23,12 @@ The contract is **storage-agnostic**: it never stores artifacts, only their
 SHA-256 digests. Anyone holding the artifact can independently verify its
 integrity against the on-chain hash.
 
+## Live Testing Deployment
+
+A `PackageRegistry` instance is deployed on Base mainnet at
+[`0x6ff7a812958fcf17d44069280ef4f21db1ef92ff`](https://basescan.org/address/0x6ff7a812958fcf17d44069280ef4f21db1ef92ff#code).
+This deployment is for testing and evaluation purposes.
+
 ## Repository Layout
 
 ```
