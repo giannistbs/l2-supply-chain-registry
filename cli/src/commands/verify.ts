@@ -44,14 +44,13 @@ export async function verifyCommand(
   if (opts.json) {
     console.log(JSON.stringify(result, null, 2));
   } else {
-    console.log(match ? "MATCH" : "MISMATCH");
+    console.log(revoked ? "REVOKED" : match ? "MATCH" : "MISMATCH");
     console.log(`  local hash:     ${localHash}`);
     console.log(`  on-chain hash:  ${onChainHash}`);
     console.log(`  owner:          ${owner}`);
     console.log(`  published at:   ${new Date(Number(timestamp) * 1000).toISOString()}`);
     console.log(`  revoked:        ${revoked}`);
     console.log(`  rpc latency:    ${rpcLatencyMs.toFixed(1)} ms`);
-    if (revoked) console.log("  WARNING: this version has been revoked by the maintainer.");
   }
-  return match ? 0 : 1;
+  return match && !revoked ? 0 : 1;
 }
