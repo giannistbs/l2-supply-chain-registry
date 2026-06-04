@@ -26,7 +26,6 @@ import {
   formatEther,
   parseUnits,
   Wallet,
-  type ContractTransactionResponse,
   type InterfaceAbi,
 } from "ethers";
 import { createProvider, type RpcProvider } from "./l1-fee-model.js";
@@ -55,6 +54,11 @@ const KNOWN_GAS = {
   revokeVersion: 52_887n,
   transferOwnership: 31_021n,
 } as const;
+
+// Explicit gas limit for state-changing ops. Skipping client-side eth_estimateGas avoids
+// a race on the load-balanced public RPC, where estimation can hit a node that has not yet
+// applied a just-mined prior transaction. A generous limit is free: only gasUsed is charged.
+const OP_GAS_LIMIT = 300_000n;
 
 interface TxRun {
   op: string;
@@ -212,25 +216,33 @@ async function main() {
     });
   }
 
+  // Explicit sequential nonces: the public RPC is load-balanced, so we manage the
+  // nonce locally rather than trusting its "pending" count to be consistent. We also
+  // build calldata with populateTransaction and send the request directly, which keeps
+  // the encoded data attached to the transaction.
+  let nonce = await provider.getTransactionCount(address, "latest");
+
   async function measureTx(
     op: string,
     sample: number,
-    send: () => Promise<ContractTransactionResponse>,
+    populate: () => Promise<{ to?: string; data?: string }>,
   ): Promise<void> {
+    const req = await populate();
+    const txNonce = nonce++;
     const t0 = performance.now();
-    const tx = await send();
+    const tx = await wallet.sendTransaction({ to: req.to, data: req.data, nonce: txNonce, gasLimit: OP_GAS_LIMIT });
     await tx.wait();
     const ms = performance.now() - t0;
     const raw = await fetchRaw(tx.hash);
-    record(op, sample, raw, tx.hash, ms, dataBytes(tx.data));
-    console.log(`  ${op} #${sample}: gas ${raw.gasUsed && BigInt(raw.gasUsed)} confirm ${ms.toFixed(0)}ms tx ${tx.hash}`);
+    record(op, sample, raw, tx.hash, ms, dataBytes(req.data));
+    console.log(`  ${op} #${sample}: gas ${BigInt(raw.gasUsed)} confirm ${ms.toFixed(0)}ms tx ${tx.hash}`);
     await new Promise((r) => setTimeout(r, 100));
   }
 
   // 1) Deploy the contract live and capture its receipt.
   const factory = new ContractFactory(ABI, BYTECODE, wallet);
   const tDeploy = performance.now();
-  const deployed = await factory.deploy();
+  const deployed = await factory.deploy({ nonce: nonce++ });
   const deployTx = deployed.deploymentTransaction();
   if (!deployTx) throw new Error("no deployment transaction");
   await deployed.waitForDeployment();
@@ -238,20 +250,20 @@ async function main() {
   const contractAddress = await deployed.getAddress();
   const deployRaw = await fetchRaw(deployTx.hash);
   record("deploy", 1, deployRaw, deployTx.hash, deployMs, dataBytes(deployTx.data));
-  console.log(`  deploy: address ${contractAddress} gas ${deployRaw.gasUsed && BigInt(deployRaw.gasUsed)} confirm ${deployMs.toFixed(0)}ms tx ${deployTx.hash}`);
+  console.log(`  deploy: address ${contractAddress} gas ${BigInt(deployRaw.gasUsed)} confirm ${deployMs.toFixed(0)}ms tx ${deployTx.hash}`);
   await new Promise((r) => setTimeout(r, 100));
 
   const registry = new Contract(contractAddress, ABI, wallet) as unknown as {
-    registerPackage: (n: string) => Promise<ContractTransactionResponse>;
-    publishVersion: (n: string, v: string, h: string) => Promise<ContractTransactionResponse>;
+    registerPackage: { populateTransaction: (n: string) => Promise<{ to?: string; data?: string }> };
+    publishVersion: { populateTransaction: (n: string, v: string, h: string) => Promise<{ to?: string; data?: string }> };
     verifyVersion: (n: string, v: string) => Promise<[string, string, bigint, boolean]>;
-    transferOwnership: (n: string, a: string) => Promise<ContractTransactionResponse>;
-    revokeVersion: (n: string, v: string) => Promise<ContractTransactionResponse>;
+    transferOwnership: { populateTransaction: (n: string, a: string) => Promise<{ to?: string; data?: string }> };
+    revokeVersion: { populateTransaction: (n: string, v: string) => Promise<{ to?: string; data?: string }> };
   };
 
   // 2) Register package A.
   const nameA = randomName("bench");
-  await measureTx("registerPackage", 1, () => registry.registerPackage(nameA));
+  await measureTx("registerPackage", 1, () => registry.registerPackage.populateTransaction(nameA));
 
   // 3) Publish N distinct versions (latency hot path).
   const versions: string[] = [];
@@ -259,7 +271,7 @@ async function main() {
     const version = `1.0.${k}`;
     versions.push(version);
     const hash = randomHash();
-    await measureTx("publishVersion", k, () => registry.publishVersion(nameA, version, hash));
+    await measureTx("publishVersion", k, () => registry.publishVersion.populateTransaction(nameA, version, hash));
   }
 
   // 4) Verification read latency: sequential eth_call over the published versions.
@@ -274,13 +286,13 @@ async function main() {
   console.log(`  verifyVersion reads x${readSamples}: median ${readStats.median.toFixed(1)}ms p95 ${readStats.p95.toFixed(1)}ms`);
 
   // 5) Revoke one published version.
-  await measureTx("revokeVersion", 1, () => registry.revokeVersion(nameA, versions[0]!));
+  await measureTx("revokeVersion", 1, () => registry.revokeVersion.populateTransaction(nameA, versions[0]!));
 
   // 6) Register a second package and transfer it, so transfer is measured without losing A.
   const nameB = randomName("bench");
-  await measureTx("registerPackage", 2, () => registry.registerPackage(nameB));
+  await measureTx("registerPackage", 2, () => registry.registerPackage.populateTransaction(nameB));
   const sink = Wallet.createRandom().address;
-  await measureTx("transferOwnership", 1, () => registry.transferOwnership(nameB, sink));
+  await measureTx("transferOwnership", 1, () => registry.transferOwnership.populateTransaction(nameB, sink));
 
   const results = {
     methodology: "base-mainnet-live",
