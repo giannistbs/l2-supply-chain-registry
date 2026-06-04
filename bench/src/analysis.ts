@@ -14,7 +14,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const RESULTS_DIR = resolve(__dirname, "..", "results");
 
 interface RegistryFile {
-  methodology: "anvil-gas-mainnet-fee-model";
+  methodology: string;
   tx: Array<{
     op: string;
     network: string;
@@ -87,6 +87,72 @@ function toCsv(rows: Row[]): string {
   return lines.join("\n") + "\n";
 }
 
+interface OpAccumulator {
+  gas: number[];
+  latency: number[];
+  totalUsd: number[];
+  l2Usd: number[];
+  l1Usd: number[];
+  l2Wei: number[];
+  l1Wei: number[];
+  totalWei: number[];
+  serializedBytes: number[];
+}
+
+/**
+ * Aggregate a registry result file (modeled or live) into summary rows.
+ * `source` distinguishes modeled ("registry") from live Base ("registry-live").
+ * `readNetwork` labels the verifyVersion read row. When `publishMedianUsdByNetwork`
+ * is provided, the publishVersion median feeds the projection table; live runs pass
+ * null so projections stay anchored to the modeled figures.
+ */
+function aggregateRegistry(
+  data: RegistryFile,
+  source: string,
+  readNetwork: string,
+  rows: Row[],
+  publishMedianUsdByNetwork: Record<string, number> | null,
+): void {
+  const byOp = new Map<string, OpAccumulator>();
+  for (const t of data.tx) {
+    const key = `${t.network}/${t.op}`;
+    if (!byOp.has(key)) {
+      byOp.set(key, { gas: [], latency: [], totalUsd: [], l2Usd: [], l1Usd: [], l2Wei: [], l1Wei: [], totalWei: [], serializedBytes: [] });
+    }
+    const b = byOp.get(key)!;
+    b.gas.push(Number(t.gasUsed));
+    b.latency.push(t.txConfirmMs);
+    b.totalUsd.push(t.totalUsd);
+    b.l2Usd.push(t.l2ExecutionUsd);
+    b.l1Usd.push(t.l1DataUsd);
+    b.l2Wei.push(Number(t.l2ExecutionFeeWei));
+    b.l1Wei.push(Number(t.l1DataFeeWei));
+    b.totalWei.push(Number(t.totalFeeWei));
+    b.serializedBytes.push(t.serializedTxBytes);
+  }
+  for (const [key, b] of byOp.entries()) {
+    const slash = key.indexOf("/");
+    const network = key.slice(0, slash);
+    const op = key.slice(slash + 1);
+    rows.push({ source, network, op, metric: "gasUsed", unit: "gas", stats: statsOf(b.gas) });
+    rows.push({ source, network, op, metric: "txConfirmMs", unit: "ms", stats: statsOf(b.latency) });
+    rows.push({ source, network, op, metric: "l2ExecutionUsd", unit: "USD", stats: statsOf(b.l2Usd) });
+    rows.push({ source, network, op, metric: "l1DataUsd", unit: "USD", stats: statsOf(b.l1Usd) });
+    rows.push({ source, network, op, metric: "totalUsd", unit: "USD", stats: statsOf(b.totalUsd) });
+    rows.push({ source, network, op, metric: "l2ExecutionFeeWei", unit: "wei", stats: statsOf(b.l2Wei) });
+    rows.push({ source, network, op, metric: "l1DataFeeWei", unit: "wei", stats: statsOf(b.l1Wei) });
+    rows.push({ source, network, op, metric: "totalFeeWei", unit: "wei", stats: statsOf(b.totalWei) });
+    rows.push({ source, network, op, metric: "serializedTxBytes", unit: "bytes", stats: statsOf(b.serializedBytes) });
+    if (publishMedianUsdByNetwork && op === "publishVersion") {
+      publishMedianUsdByNetwork[network] = statsOf(b.totalUsd).median;
+    }
+  }
+  const reads = data.read.map((r) => r.rpcLatencyMs);
+  if (reads.length) {
+    rows.push({ source, network: readNetwork, op: "verifyVersion", metric: "rpcLatencyMs", unit: "ms", stats: statsOf(reads) });
+  }
+}
+
 function main() {
   const files = readdirSync(RESULTS_DIR).filter((f) => f.endsWith(".json"));
   const rows: Row[] = [];
@@ -95,101 +161,9 @@ function main() {
   for (const f of files) {
     const path = join(RESULTS_DIR, f);
     if (f.startsWith("registry-modeled-")) {
-      const data = loadJson<RegistryFile>(path);
-      const byOp = new Map<string, {
-        gas: number[];
-        latency: number[];
-        totalUsd: number[];
-        l2Usd: number[];
-        l1Usd: number[];
-        l2Wei: number[];
-        l1Wei: number[];
-        totalWei: number[];
-        serializedBytes: number[];
-      }>();
-      for (const t of data.tx) {
-        const network = t.network;
-        const key = `${network}/${t.op}`;
-        if (!byOp.has(key)) {
-          byOp.set(key, {
-            gas: [],
-            latency: [],
-            totalUsd: [],
-            l2Usd: [],
-            l1Usd: [],
-            l2Wei: [],
-            l1Wei: [],
-            totalWei: [],
-            serializedBytes: [],
-          });
-        }
-        const b = byOp.get(key)!;
-        b.gas.push(Number(t.gasUsed));
-        b.latency.push(t.txConfirmMs);
-        b.totalUsd.push(t.totalUsd);
-        b.l2Usd.push(t.l2ExecutionUsd);
-        b.l1Usd.push(t.l1DataUsd);
-        b.l2Wei.push(Number(t.l2ExecutionFeeWei));
-        b.l1Wei.push(Number(t.l1DataFeeWei));
-        b.totalWei.push(Number(t.totalFeeWei));
-        b.serializedBytes.push(t.serializedTxBytes);
-      }
-      for (const [key, b] of byOp.entries()) {
-        const slash = key.indexOf("/");
-        const network = key.slice(0, slash);
-        const op = key.slice(slash + 1);
-        rows.push({ source: "registry", network, op, metric: "gasUsed", unit: "gas", stats: statsOf(b.gas) });
-        rows.push({
-          source: "registry",
-          network,
-          op,
-          metric: "txConfirmMs",
-          unit: "ms",
-          stats: statsOf(b.latency),
-        });
-        rows.push({
-          source: "registry",
-          network,
-          op,
-          metric: "l2ExecutionUsd",
-          unit: "USD",
-          stats: statsOf(b.l2Usd),
-        });
-        rows.push({
-          source: "registry",
-          network,
-          op,
-          metric: "l1DataUsd",
-          unit: "USD",
-          stats: statsOf(b.l1Usd),
-        });
-        rows.push({
-          source: "registry",
-          network,
-          op,
-          metric: "totalUsd",
-          unit: "USD",
-          stats: statsOf(b.totalUsd),
-        });
-        rows.push({ source: "registry", network, op, metric: "l2ExecutionFeeWei", unit: "wei", stats: statsOf(b.l2Wei) });
-        rows.push({ source: "registry", network, op, metric: "l1DataFeeWei", unit: "wei", stats: statsOf(b.l1Wei) });
-        rows.push({ source: "registry", network, op, metric: "totalFeeWei", unit: "wei", stats: statsOf(b.totalWei) });
-        rows.push({ source: "registry", network, op, metric: "serializedTxBytes", unit: "bytes", stats: statsOf(b.serializedBytes) });
-        if (op === "publishVersion") {
-          publishMedianUsdByNetwork[network] = statsOf(b.totalUsd).median;
-        }
-      }
-      const reads = data.read.map((r) => r.rpcLatencyMs);
-      if (reads.length) {
-        rows.push({
-          source: "registry",
-          network: "anvil",
-          op: "verifyVersion",
-          metric: "rpcLatencyMs",
-          unit: "ms",
-          stats: statsOf(reads),
-        });
-      }
+      aggregateRegistry(loadJson<RegistryFile>(path), "registry", "anvil", rows, publishMedianUsdByNetwork);
+    } else if (f.startsWith("registry-live-")) {
+      aggregateRegistry(loadJson<RegistryFile>(path), "registry-live", "base", rows, null);
     } else if (f.startsWith("sigstore-")) {
       const data = loadJson<SigstoreFile>(path);
       const byOp = new Map<string, number[]>();
