@@ -1,0 +1,2674 @@
+[
+  {
+    "source": "npm",
+    "network": "registry.npmjs.org",
+    "op": "metadataFetch/lodash",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 32.93568836000011,
+      "median": 32.654082999999446,
+      "p95": 36.38366700000006,
+      "p99": 38.28516700000182,
+      "min": 29.56012499999997,
+      "max": 38.28516700000182
+    }
+  },
+  {
+    "source": "npm",
+    "network": "registry.npmjs.org",
+    "op": "versionFetch/lodash",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 30.424845879999904,
+      "median": 24.65691599999991,
+      "p95": 34.61866699999882,
+      "p99": 296.60679200000004,
+      "min": 20.632041999999274,
+      "max": 296.60679200000004
+    }
+  },
+  {
+    "source": "npm",
+    "network": "registry.npmjs.org",
+    "op": "tarballDownloadAndHash/lodash",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 58.367834079999945,
+      "median": 50.55737500000032,
+      "p95": 57.52795799999876,
+      "p99": 397.9524170000004,
+      "min": 45.86045899999954,
+      "max": 397.9524170000004
+    }
+  },
+  {
+    "source": "npm",
+    "network": "registry.npmjs.org",
+    "op": "metadataFetch/express",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 50.32477999999999,
+      "median": 43.812167000000045,
+      "p95": 124.51179100000081,
+      "p99": 131.5106249999999,
+      "min": 21.383834000000206,
+      "max": 131.5106249999999
+    }
+  },
+  {
+    "source": "npm",
+    "network": "registry.npmjs.org",
+    "op": "versionFetch/express",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 30.492947500000106,
+      "median": 24.09308299999975,
+      "p95": 30.784459000000425,
+      "p99": 248.06554200000005,
+      "min": 20.862334000001283,
+      "max": 248.06554200000005
+    }
+  },
+  {
+    "source": "npm",
+    "network": "registry.npmjs.org",
+    "op": "tarballDownloadAndHash/express",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 29.365888380000005,
+      "median": 25.642542000001413,
+      "p95": 33.76916700000038,
+      "p99": 116.31712500000003,
+      "min": 21.55016700000033,
+      "max": 116.31712500000003
+    }
+  },
+  {
+    "source": "npm",
+    "network": "registry.npmjs.org",
+    "op": "metadataFetch/react",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 77.75039670000015,
+      "median": 57.514665999999124,
+      "p95": 135.01095899999927,
+      "p99": 250.79475000000093,
+      "min": 25.80645899999945,
+      "max": 250.79475000000093
+    }
+  },
+  {
+    "source": "npm",
+    "network": "registry.npmjs.org",
+    "op": "versionFetch/react",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 33.0563807999999,
+      "median": 24.031834000001254,
+      "p95": 33.865499999999884,
+      "p99": 424.4890830000004,
+      "min": 20.3715830000001,
+      "max": 424.4890830000004
+    }
+  },
+  {
+    "source": "npm",
+    "network": "registry.npmjs.org",
+    "op": "tarballDownloadAndHash/react",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 28.34891331999993,
+      "median": 26.128582999999708,
+      "p95": 33.30958399999872,
+      "p99": 105.05320799999936,
+      "min": 22.459584000000177,
+      "max": 105.05320799999936
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "deploy",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 1,
+      "mean": 808630,
+      "median": 808630,
+      "p95": 808630,
+      "p99": 808630,
+      "min": 808630,
+      "max": 808630
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "deploy",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 1,
+      "mean": 5340.4905,
+      "median": 5340.4905,
+      "p95": 5340.4905,
+      "p99": 5340.4905,
+      "min": 5340.4905,
+      "max": 5340.4905
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "deploy",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 1,
+      "mean": 0.0085243833888,
+      "median": 0.0085243833888,
+      "p95": 0.0085243833888,
+      "p99": 0.0085243833888,
+      "min": 0.0085243833888,
+      "max": 0.0085243833888
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "deploy",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 1,
+      "mean": 0.0001366489594356117,
+      "median": 0.0001366489594356117,
+      "p95": 0.0001366489594356117,
+      "p99": 0.0001366489594356117,
+      "min": 0.0001366489594356117,
+      "max": 0.0001366489594356117
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "deploy",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 1,
+      "mean": 0.008661032348235611,
+      "median": 0.008661032348235611,
+      "p95": 0.008661032348235611,
+      "p99": 0.008661032348235611,
+      "min": 0.008661032348235611,
+      "max": 0.008661032348235611
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "deploy",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 1,
+      "mean": 4851780000000,
+      "median": 4851780000000,
+      "p95": 4851780000000,
+      "p99": 4851780000000,
+      "min": 4851780000000,
+      "max": 4851780000000
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "deploy",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 1,
+      "mean": 77775794233,
+      "median": 77775794233,
+      "p95": 77775794233,
+      "p99": 77775794233,
+      "min": 77775794233,
+      "max": 77775794233
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "deploy",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 1,
+      "mean": 4929555794233,
+      "median": 4929555794233,
+      "p95": 4929555794233,
+      "p99": 4929555794233,
+      "min": 4929555794233,
+      "max": 4929555794233
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "deploy",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 1,
+      "mean": 3522,
+      "median": 3522,
+      "p95": 3522,
+      "p99": 3522,
+      "min": 3522,
+      "max": 3522
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 2,
+      "mean": 46890,
+      "median": 46890,
+      "p95": 46890,
+      "p99": 46890,
+      "min": 46890,
+      "max": 46890
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 2,
+      "mean": 608.0937709999998,
+      "median": 649.1467499999999,
+      "p95": 649.1467499999999,
+      "p99": 649.1467499999999,
+      "min": 567.0407919999998,
+      "max": 649.1467499999999
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 2,
+      "mean": 0.0004943031264,
+      "median": 0.0004943031264,
+      "p95": 0.0004943031264,
+      "p99": 0.0004943031264,
+      "min": 0.0004943031264,
+      "max": 0.0004943031264
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 2,
+      "mean": 0.00001937258790952664,
+      "median": 0.00003198038491504656,
+      "p95": 0.00003198038491504656,
+      "p99": 0.00003198038491504656,
+      "min": 0.0000067647909040067196,
+      "max": 0.00003198038491504656
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 2,
+      "mean": 0.0005136757143095266,
+      "median": 0.0005262835113150465,
+      "p95": 0.0005262835113150465,
+      "p99": 0.0005262835113150465,
+      "min": 0.0005010679173040067,
+      "max": 0.0005262835113150465
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 2,
+      "mean": 281340000000,
+      "median": 281340000000,
+      "p95": 281340000000,
+      "p99": 281340000000,
+      "min": 281340000000,
+      "max": 281340000000
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 2,
+      "mean": 11026197471.5,
+      "median": 18202113261,
+      "p95": 18202113261,
+      "p99": 18202113261,
+      "min": 3850281682,
+      "max": 18202113261
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 2,
+      "mean": 292366197471.5,
+      "median": 299542113261,
+      "p95": 299542113261,
+      "p99": 299542113261,
+      "min": 285190281682,
+      "max": 299542113261
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 2,
+      "mean": 100,
+      "median": 100,
+      "p95": 100,
+      "p99": 100,
+      "min": 100,
+      "max": 100
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 25,
+      "mean": 104796.2,
+      "median": 104117,
+      "p95": 104117,
+      "p99": 121205,
+      "min": 104105,
+      "max": 121205
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 25,
+      "mean": 2429.37997332,
+      "median": 1279.0611250000075,
+      "p95": 5699.244040999998,
+      "p99": 5849.814792000001,
+      "min": 502.3372079999972,
+      "max": 5849.814792000001
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 25,
+      "mean": 0.001104736389312,
+      "median": 0.00109757642592,
+      "p95": 0.00109757642592,
+      "p99": 0.0012777140208,
+      "min": 0.0010974499248,
+      "max": 0.0012777140208
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 25,
+      "mean": 0.00000928945618453874,
+      "median": 0.0000083714107059224,
+      "p95": 0.000022436031629388,
+      "p99": 0.000030049836056501123,
+      "min": 0.0000064138348461928,
+      "max": 0.000030049836056501123
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 25,
+      "mean": 0.001114025845496539,
+      "median": 0.0011058213355059224,
+      "p95": 0.0011276262619765013,
+      "p99": 0.0012872717288616058,
+      "min": 0.0011038637596461928,
+      "max": 0.0012872717288616058
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 25,
+      "mean": 628777200000,
+      "median": 624702000000,
+      "p95": 624702000000,
+      "p99": 727230000000,
+      "min": 624630000000,
+      "max": 727230000000
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 25,
+      "mean": 5287232597.52,
+      "median": 4764713315,
+      "p95": 12769802175,
+      "p99": 17103312572,
+      "min": 3650529805,
+      "max": 17103312572
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 25,
+      "mean": 634064432597.52,
+      "median": 629394713315,
+      "p95": 641805312572,
+      "p99": 732669912156,
+      "min": 628280529805,
+      "max": 732669912156
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 25,
+      "mean": 228,
+      "median": 228,
+      "p95": 228,
+      "p99": 228,
+      "min": 228,
+      "max": 228
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 1,
+      "mean": 52887,
+      "median": 52887,
+      "p95": 52887,
+      "p99": 52887,
+      "min": 52887,
+      "max": 52887
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 1,
+      "mean": 5391.253541999991,
+      "median": 5391.253541999991,
+      "p95": 5391.253541999991,
+      "p99": 5391.253541999991,
+      "min": 5391.253541999991,
+      "max": 5391.253541999991
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 1,
+      "mean": 0.00055752206112,
+      "median": 0.00055752206112,
+      "p95": 0.00055752206112,
+      "p99": 0.00055752206112,
+      "min": 0.00055752206112,
+      "max": 0.00055752206112
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 1,
+      "mean": 0.00000661675484124608,
+      "median": 0.00000661675484124608,
+      "p95": 0.00000661675484124608,
+      "p99": 0.00000661675484124608,
+      "min": 0.00000661675484124608,
+      "max": 0.00000661675484124608
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 1,
+      "mean": 0.0005641388159612461,
+      "median": 0.0005641388159612461,
+      "p95": 0.0005641388159612461,
+      "p99": 0.0005641388159612461,
+      "min": 0.0005641388159612461,
+      "max": 0.0005641388159612461
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 1,
+      "mean": 317322000000,
+      "median": 317322000000,
+      "p95": 317322000000,
+      "p99": 317322000000,
+      "min": 317322000000,
+      "max": 317322000000
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 1,
+      "mean": 3766024748,
+      "median": 3766024748,
+      "p95": 3766024748,
+      "p99": 3766024748,
+      "min": 3766024748,
+      "max": 3766024748
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 1,
+      "mean": 321088024748,
+      "median": 321088024748,
+      "p95": 321088024748,
+      "p99": 321088024748,
+      "min": 321088024748,
+      "max": 321088024748
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 1,
+      "mean": 196,
+      "median": 196,
+      "p95": 196,
+      "p99": 196,
+      "min": 196,
+      "max": 196
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 1,
+      "mean": 30978,
+      "median": 30978,
+      "p95": 30978,
+      "p99": 30978,
+      "min": 30978,
+      "max": 30978
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 1,
+      "mean": 570.338042000003,
+      "median": 570.338042000003,
+      "p95": 570.338042000003,
+      "p99": 570.338042000003,
+      "min": 570.338042000003,
+      "max": 570.338042000003
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 1,
+      "mean": 0.00032656264128,
+      "median": 0.00032656264128,
+      "p95": 0.00032656264128,
+      "p99": 0.00032656264128,
+      "min": 0.00032656264128,
+      "max": 0.00032656264128
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 1,
+      "mean": 0.00000589902622030624,
+      "median": 0.00000589902622030624,
+      "p95": 0.00000589902622030624,
+      "p99": 0.00000589902622030624,
+      "min": 0.00000589902622030624,
+      "max": 0.00000589902622030624
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 1,
+      "mean": 0.00033246166750030626,
+      "median": 0.00033246166750030626,
+      "p95": 0.00033246166750030626,
+      "p99": 0.00033246166750030626,
+      "min": 0.00033246166750030626,
+      "max": 0.00033246166750030626
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 1,
+      "mean": 185868000000,
+      "median": 185868000000,
+      "p95": 185868000000,
+      "p99": 185868000000,
+      "min": 185868000000,
+      "max": 185868000000
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 1,
+      "mean": 3357518794,
+      "median": 3357518794,
+      "p95": 3357518794,
+      "p99": 3357518794,
+      "min": 3357518794,
+      "max": 3357518794
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 1,
+      "mean": 189225518794,
+      "median": 189225518794,
+      "p95": 189225518794,
+      "p99": 189225518794,
+      "min": 189225518794,
+      "max": 189225518794
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 1,
+      "mean": 132,
+      "median": 132,
+      "p95": 132,
+      "p99": 132,
+      "min": 132,
+      "max": 132
+    }
+  },
+  {
+    "source": "registry-live",
+    "network": "base",
+    "op": "verifyVersion",
+    "metric": "rpcLatencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 25,
+      "mean": 1660.489391639998,
+      "median": 167.3605419999949,
+      "p95": 11385.735625000001,
+      "p99": 12402.437458999993,
+      "min": 149.39841700000397,
+      "max": 12402.437458999993
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 46698,
+      "median": 46698,
+      "p95": 46698,
+      "p99": 46698,
+      "min": 46698,
+      "max": 46698
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 78.0539995999998,
+      "median": 79.47474999999758,
+      "p95": 83.21629100000064,
+      "p99": 83.21629100000064,
+      "min": 67.63408300000003,
+      "max": 83.21629100000064
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.00063957394008,
+      "median": 0.00063957394008,
+      "p95": 0.00063957394008,
+      "p99": 0.00063957394008,
+      "min": 0.00063957394008,
+      "max": 0.00063957394008
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.000007578217333932343,
+      "median": 0.000007605732142303039,
+      "p95": 0.00000769842239123208,
+      "p99": 0.00000769842239123208,
+      "min": 0.0000074442548724472595,
+      "max": 0.00000769842239123208
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.0006471521574139322,
+      "median": 0.000647179672222303,
+      "p95": 0.000647272362471232,
+      "p99": 0.000647272362471232,
+      "min": 0.0006470181949524473,
+      "max": 0.000647272362471232
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 280188000000,
+      "median": 280188000000,
+      "p95": 280188000000,
+      "p99": 280188000000,
+      "min": 280188000000,
+      "max": 280188000000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 3319906308.4,
+      "median": 3331960144,
+      "p95": 3372566388,
+      "p99": 3372566388,
+      "min": 3261219311,
+      "max": 3372566388
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 283507906308.4,
+      "median": 283519960144,
+      "p95": 283560566388,
+      "p99": 283560566388,
+      "min": 283449219311,
+      "max": 283560566388
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "registerPackage",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 207,
+      "median": 207,
+      "p95": 207,
+      "p99": 207,
+      "min": 207,
+      "max": 207
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "registerPackage",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 46698,
+      "median": 46698,
+      "p95": 46698,
+      "p99": 46698,
+      "min": 46698,
+      "max": 46698
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "registerPackage",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 78.0539995999998,
+      "median": 79.47474999999758,
+      "p95": 83.21629100000064,
+      "p99": 83.21629100000064,
+      "min": 67.63408300000003,
+      "max": 83.21629100000064
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "registerPackage",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.00001280299113252144,
+      "median": 0.00001280299113252144,
+      "p95": 0.00001280299113252144,
+      "p99": 0.00001280299113252144,
+      "min": 0.00001280299113252144,
+      "max": 0.00001280299113252144
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "registerPackage",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.00509426827035726,
+      "median": 0.00509426827035726,
+      "p95": 0.00509426827035726,
+      "p99": 0.00509426827035726,
+      "min": 0.00509426827035726,
+      "max": 0.00509426827035726
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "registerPackage",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.005107071261489781,
+      "median": 0.005107071261489781,
+      "p95": 0.005107071261489781,
+      "p99": 0.005107071261489781,
+      "min": 0.005107071261489781,
+      "max": 0.005107071261489781
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "registerPackage",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 5608803384,
+      "median": 5608803384,
+      "p95": 5608803384,
+      "p99": 5608803384,
+      "min": 5608803384,
+      "max": 5608803384
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "registerPackage",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 2231724510158,
+      "median": 2231724510158,
+      "p95": 2231724510158,
+      "p99": 2231724510158,
+      "min": 2231724510158,
+      "max": 2231724510158
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "registerPackage",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 2237333313542,
+      "median": 2237333313542,
+      "p95": 2237333313542,
+      "p99": 2237333313542,
+      "min": 2237333313542,
+      "max": 2237333313542
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "registerPackage",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 208,
+      "median": 208,
+      "p95": 208,
+      "p99": 208,
+      "min": 208,
+      "max": 208
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "registerPackage",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 46698,
+      "median": 46698,
+      "p95": 46698,
+      "p99": 46698,
+      "min": 46698,
+      "max": 46698
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "registerPackage",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 78.0539995999998,
+      "median": 79.47474999999758,
+      "p95": 83.21629100000064,
+      "p99": 83.21629100000064,
+      "min": 67.63408300000003,
+      "max": 83.21629100000064
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "registerPackage",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.0021367312572819356,
+      "median": 0.0021340450467336,
+      "p95": 0.0021442782297748796,
+      "p99": 0.0021442782297748796,
+      "min": 0.0021319131335999996,
+      "max": 0.0021442782297748796
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "registerPackage",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.000046964604605152,
+      "median": 0.00004696554232188,
+      "p95": 0.00004705931399468,
+      "p99": 0.00004705931399468,
+      "min": 0.0000468858364,
+      "max": 0.00004705931399468
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "registerPackage",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.0021836958618870876,
+      "median": 0.0021810387205573197,
+      "p95": 0.0021912437720967596,
+      "p99": 0.0021912437720967596,
+      "min": 0.0021787989699999996,
+      "max": 0.0021912437720967596
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "registerPackage",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 936070749600,
+      "median": 934893960000,
+      "p95": 939376968000,
+      "p99": 939376968000,
+      "min": 933960000000,
+      "max": 939376968000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "registerPackage",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 20574507200,
+      "median": 20574918000,
+      "p95": 20615998000,
+      "p99": 20615998000,
+      "min": 20540000000,
+      "max": 20615998000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "registerPackage",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 956645256800,
+      "median": 955481202000,
+      "p95": 959951886000,
+      "p99": 959951886000,
+      "min": 954500000000,
+      "max": 959951886000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "registerPackage",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 208,
+      "median": 208,
+      "p95": 208,
+      "p99": 208,
+      "min": 208,
+      "max": 208
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 121010.6,
+      "median": 121013,
+      "p95": 121013,
+      "p99": 121013,
+      "min": 121001,
+      "max": 121013
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 82.49239999999963,
+      "median": 81.54608300000109,
+      "p95": 89.46791699999994,
+      "p99": 89.46791699999994,
+      "min": 78.89570800000001,
+      "max": 89.46791699999994
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.001657356337176,
+      "median": 0.00165738920748,
+      "p95": 0.00165738920748,
+      "p99": 0.00165738920748,
+      "min": 0.00165722485596,
+      "max": 0.00165738920748
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.000009945659860608168,
+      "median": 0.000009811660928151199,
+      "p95": 0.00001014665825929362,
+      "p99": 0.00001014665825929362,
+      "min": 0.000009811660928151199,
+      "max": 0.00001014665825929362
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.001667301997036608,
+      "median": 0.001667200868408151,
+      "p95": 0.0016675358657392936,
+      "p99": 0.0016675358657392936,
+      "min": 0.001667200868408151,
+      "max": 0.0016675358657392936
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 726063600000,
+      "median": 726078000000,
+      "p95": 726078000000,
+      "p99": 726078000000,
+      "min": 726006000000,
+      "max": 726078000000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 4357048294.8,
+      "median": 4298345320,
+      "p95": 4445102757,
+      "p99": 4445102757,
+      "min": 4298345320,
+      "max": 4445102757
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 730420648294.8,
+      "median": 730376345320,
+      "p95": 730523102757,
+      "p99": 730523102757,
+      "min": 730376345320,
+      "max": 730523102757
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "publishVersion",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 337,
+      "median": 337,
+      "p95": 337,
+      "p99": 337,
+      "min": 337,
+      "max": 337
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "publishVersion",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 121010.6,
+      "median": 121013,
+      "p95": 121013,
+      "p99": 121013,
+      "min": 121001,
+      "max": 121013
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "publishVersion",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 82.49239999999963,
+      "median": 81.54608300000109,
+      "p95": 89.46791699999994,
+      "p99": 89.46791699999994,
+      "min": 78.89570800000001,
+      "max": 89.46791699999994
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "publishVersion",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.000033176959157589164,
+      "median": 0.00003317761715533463,
+      "p95": 0.00003317761715533463,
+      "p99": 0.00003317761715533463,
+      "min": 0.00003317432716660728,
+      "max": 0.00003317761715533463
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "publishVersion",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.008383609545532284,
+      "median": 0.008383609545532284,
+      "p95": 0.008383609545532284,
+      "p99": 0.008383609545532284,
+      "min": 0.008383609545532284,
+      "max": 0.008383609545532284
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "publishVersion",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.008416786504689874,
+      "median": 0.008416787162687619,
+      "p95": 0.008416787162687619,
+      "p99": 0.008416787162687619,
+      "min": 0.008416783872698891,
+      "max": 0.008416787162687619
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "publishVersion",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 14534341144.8,
+      "median": 14534629404,
+      "p95": 14534629404,
+      "p99": 14534629404,
+      "min": 14533188108,
+      "max": 14534629404
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "publishVersion",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 3672736870814,
+      "median": 3672736870814,
+      "p95": 3672736870814,
+      "p99": 3672736870814,
+      "min": 3672736870814,
+      "max": 3672736870814
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "publishVersion",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 3687271211958.8,
+      "median": 3687271500218,
+      "p95": 3687271500218,
+      "p99": 3687271500218,
+      "min": 3687270058922,
+      "max": 3687271500218
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "publishVersion",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 338,
+      "median": 338,
+      "p95": 338,
+      "p99": 338,
+      "min": 338,
+      "max": 338
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "publishVersion",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 121010.6,
+      "median": 121013,
+      "p95": 121013,
+      "p99": 121013,
+      "min": 121001,
+      "max": 121013
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "publishVersion",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 82.49239999999963,
+      "median": 81.54608300000109,
+      "p95": 89.46791699999994,
+      "p99": 89.46791699999994,
+      "min": 78.89570800000001,
+      "max": 89.46791699999994
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "publishVersion",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.0055290510362111436,
+      "median": 0.0055246306916,
+      "p95": 0.00553844546861832,
+      "p99": 0.00553844546861832,
+      "min": 0.0055246306916,
+      "max": 0.00553844546861832
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "publishVersion",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.00006426518057788799,
+      "median": 0.00006446231839999999,
+      "p95": 0.00006535585196103999,
+      "p99": 0.00006535585196103999,
+      "min": 0.00006332098839999999,
+      "max": 0.00006535585196103999
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "publishVersion",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.005593316216789032,
+      "median": 0.00558998654356104,
+      "p95": 0.00560216989434672,
+      "p99": 0.00560216989434672,
+      "min": 0.00558795168,
+      "max": 0.00560216989434672
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "publishVersion",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 2422196488400,
+      "median": 2420260000000,
+      "p95": 2426312052000,
+      "p99": 2426312052000,
+      "min": 2420260000000,
+      "max": 2426312052000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "publishVersion",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 28153636800,
+      "median": 28240000000,
+      "p95": 28631444000,
+      "p99": 28631444000,
+      "min": 27740000000,
+      "max": 28631444000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "publishVersion",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 2450350125200,
+      "median": 2448891444000,
+      "p95": 2454228792000,
+      "p99": 2454228792000,
+      "min": 2448000000000,
+      "max": 2454228792000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "publishVersion",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 338,
+      "median": 338,
+      "p95": 338,
+      "p99": 338,
+      "min": 338,
+      "max": 338
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 52887,
+      "median": 52887,
+      "p95": 52887,
+      "p99": 52887,
+      "min": 52887,
+      "max": 52887
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 82.10592500000057,
+      "median": 82.02979200000118,
+      "p95": 85.1845830000002,
+      "p99": 85.1845830000002,
+      "min": 79.48616700000093,
+      "max": 85.1845830000002
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.00072433823652,
+      "median": 0.00072433823652,
+      "p95": 0.00072433823652,
+      "p99": 0.00072433823652,
+      "min": 0.00072433823652,
+      "max": 0.00072433823652
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.000008488676086595014,
+      "median": 0.000008374307252207519,
+      "p95": 0.000008660229338176259,
+      "p99": 0.000008660229338176259,
+      "min": 0.000008374307252207519,
+      "max": 0.000008660229338176259
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.0007328269126065949,
+      "median": 0.0007327125437722075,
+      "p95": 0.0007329984658581763,
+      "p99": 0.0007329984658581763,
+      "min": 0.0007327125437722075,
+      "max": 0.0007329984658581763
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 317322000000,
+      "median": 317322000000,
+      "p95": 317322000000,
+      "p99": 317322000000,
+      "min": 317322000000,
+      "max": 317322000000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 3718764987.6,
+      "median": 3668661672,
+      "p95": 3793919961,
+      "p99": 3793919961,
+      "min": 3668661672,
+      "max": 3793919961
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 321040764987.6,
+      "median": 320990661672,
+      "p95": 321115919961,
+      "p99": 321115919961,
+      "min": 320990661672,
+      "max": 321115919961
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "revokeVersion",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 304,
+      "median": 304,
+      "p95": 304,
+      "p99": 304,
+      "min": 304,
+      "max": 304
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "revokeVersion",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 52887,
+      "median": 52887,
+      "p95": 52887,
+      "p99": 52887,
+      "min": 52887,
+      "max": 52887
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "revokeVersion",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 82.10592500000057,
+      "median": 82.02979200000118,
+      "p95": 85.1845830000002,
+      "p99": 85.1845830000002,
+      "min": 79.48616700000093,
+      "max": 85.1845830000002
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "revokeVersion",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.000014499802818657359,
+      "median": 0.000014499802818657359,
+      "p95": 0.000014499802818657359,
+      "p99": 0.000014499802818657359,
+      "min": 0.000014499802818657359,
+      "max": 0.000014499802818657359
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "revokeVersion",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.007540942874007551,
+      "median": 0.007540942874007551,
+      "p95": 0.007540942874007551,
+      "p99": 0.007540942874007551,
+      "min": 0.007540942874007551,
+      "max": 0.007540942874007551
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "revokeVersion",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.007555442676826209,
+      "median": 0.007555442676826209,
+      "p95": 0.007555442676826209,
+      "p99": 0.007555442676826209,
+      "min": 0.007555442676826209,
+      "max": 0.007555442676826209
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "revokeVersion",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 6352151796,
+      "median": 6352151796,
+      "p95": 6352151796,
+      "p99": 6352151796,
+      "min": 6352151796,
+      "max": 6352151796
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "revokeVersion",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 3303576912027,
+      "median": 3303576912027,
+      "p95": 3303576912027,
+      "p99": 3303576912027,
+      "min": 3303576912027,
+      "max": 3303576912027
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "revokeVersion",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 3309929063823,
+      "median": 3309929063823,
+      "p95": 3309929063823,
+      "p99": 3309929063823,
+      "min": 3309929063823,
+      "max": 3309929063823
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "revokeVersion",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 305,
+      "median": 305,
+      "p95": 305,
+      "p99": 305,
+      "min": 305,
+      "max": 305
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "revokeVersion",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 52887,
+      "median": 52887,
+      "p95": 52887,
+      "p99": 52887,
+      "min": 52887,
+      "max": 52887
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "revokeVersion",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 82.10592500000057,
+      "median": 82.02979200000118,
+      "p95": 85.1845830000002,
+      "p99": 85.1845830000002,
+      "min": 79.48616700000093,
+      "max": 85.1845830000002
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "revokeVersion",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.00242097983252868,
+      "median": 0.00241590946487304,
+      "p95": 0.0024434343178608,
+      "p99": 0.0024434343178608,
+      "min": 0.00241470223447884,
+      "max": 0.0024434343178608
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "revokeVersion",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.000055861175170368,
+      "median": 0.00005561115815976,
+      "p95": 0.00005640075764568,
+      "p99": 0.00005640075764568,
+      "min": 0.0000556055976,
+      "max": 0.00005640075764568
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "revokeVersion",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.002476841007699048,
+      "median": 0.00247175650855188,
+      "p95": 0.00249983507550648,
+      "p99": 0.00249983507550648,
+      "min": 0.00247030783207884,
+      "max": 0.00249983507550648
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "revokeVersion",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 1060595898000,
+      "median": 1058374644000,
+      "p95": 1070432880000,
+      "p99": 1070432880000,
+      "min": 1057845774000,
+      "max": 1070432880000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "revokeVersion",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 24471964800,
+      "median": 24362436000,
+      "p95": 24708348000,
+      "p99": 24708348000,
+      "min": 24360000000,
+      "max": 24708348000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "revokeVersion",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 1085067862800,
+      "median": 1082840418000,
+      "p95": 1095141228000,
+      "p99": 1095141228000,
+      "min": 1082205774000,
+      "max": 1095141228000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "revokeVersion",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 305,
+      "median": 305,
+      "p95": 305,
+      "p99": 305,
+      "min": 305,
+      "max": 305
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 31021,
+      "median": 31021,
+      "p95": 31021,
+      "p99": 31021,
+      "min": 31021,
+      "max": 31021
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 82.09395840000033,
+      "median": 82.76216599999862,
+      "p95": 85.6049579999999,
+      "p99": 85.6049579999999,
+      "min": 77.04837500000212,
+      "max": 85.6049579999999
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.00042486237516,
+      "median": 0.00042486237516,
+      "p95": 0.00042486237516,
+      "p99": 0.00042486237516,
+      "min": 0.00042486237516,
+      "max": 0.00042486237516
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.000008617233477640916,
+      "median": 0.00000850113257454138,
+      "p95": 0.00000879138483229022,
+      "p99": 0.00000879138483229022,
+      "min": 0.00000850113257454138,
+      "max": 0.00000879138483229022
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.0004334796086376409,
+      "median": 0.0004333635077345414,
+      "p95": 0.0004336537599922902,
+      "p99": 0.0004336537599922902,
+      "min": 0.0004333635077345414,
+      "max": 0.0004336537599922902
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 186126000000,
+      "median": 186126000000,
+      "p95": 186126000000,
+      "p99": 186126000000,
+      "min": 186126000000,
+      "max": 186126000000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 3775084102.6,
+      "median": 3724221993,
+      "p95": 3851377267,
+      "p99": 3851377267,
+      "min": 3724221993,
+      "max": 3851377267
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 189901084102.6,
+      "median": 189850221993,
+      "p95": 189977377267,
+      "p99": 189977377267,
+      "min": 189850221993,
+      "max": 189977377267
+    }
+  },
+  {
+    "source": "registry",
+    "network": "base",
+    "op": "transferOwnership",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 239,
+      "median": 239,
+      "p95": 239,
+      "p99": 239,
+      "min": 239,
+      "max": 239
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "transferOwnership",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 31021,
+      "median": 31021,
+      "p95": 31021,
+      "p99": 31021,
+      "min": 31021,
+      "max": 31021
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "transferOwnership",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 82.09395840000033,
+      "median": 82.76216599999862,
+      "p95": 85.6049579999999,
+      "p99": 85.6049579999999,
+      "min": 77.04837500000212,
+      "max": 85.6049579999999
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "transferOwnership",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.00000850489502595288,
+      "median": 0.00000850489502595288,
+      "p95": 0.00000850489502595288,
+      "p99": 0.00000850489502595288,
+      "min": 0.00000850489502595288,
+      "max": 0.00000850489502595288
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "transferOwnership",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.005896428188499951,
+      "median": 0.005896428188499951,
+      "p95": 0.005896428188499951,
+      "p99": 0.005896428188499951,
+      "min": 0.005896428188499951,
+      "max": 0.005896428188499951
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "transferOwnership",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.005904933083525904,
+      "median": 0.005904933083525904,
+      "p95": 0.005904933083525904,
+      "p99": 0.005904933083525904,
+      "min": 0.005904933083525904,
+      "max": 0.005904933083525904
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "transferOwnership",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 3725870268,
+      "median": 3725870268,
+      "p95": 3725870268,
+      "p99": 3725870268,
+      "min": 3725870268,
+      "max": 3725870268
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "transferOwnership",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 2583139052027,
+      "median": 2583139052027,
+      "p95": 2583139052027,
+      "p99": 2583139052027,
+      "min": 2583139052027,
+      "max": 2583139052027
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "transferOwnership",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 2586864922295,
+      "median": 2586864922295,
+      "p95": 2586864922295,
+      "p99": 2586864922295,
+      "min": 2586864922295,
+      "max": 2586864922295
+    }
+  },
+  {
+    "source": "registry",
+    "network": "scroll",
+    "op": "transferOwnership",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 240,
+      "median": 240,
+      "p95": 240,
+      "p99": 240,
+      "min": 240,
+      "max": 240
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "transferOwnership",
+    "metric": "gasUsed",
+    "unit": "gas",
+    "stats": {
+      "count": 5,
+      "mean": 31021,
+      "median": 31021,
+      "p95": 31021,
+      "p99": 31021,
+      "min": 31021,
+      "max": 31021
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "transferOwnership",
+    "metric": "txConfirmMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 82.09395840000033,
+      "median": 82.76216599999862,
+      "p95": 85.6049579999999,
+      "p99": 85.6049579999999,
+      "min": 77.04837500000212,
+      "max": 85.6049579999999
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "transferOwnership",
+    "metric": "l2ExecutionUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.0014199750302597521,
+      "median": 0.00141960681620128,
+      "p95": 0.0014261213726204,
+      "p99": 0.0014261213726204,
+      "min": 0.0014162079172,
+      "max": 0.0014261213726204
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "transferOwnership",
+    "metric": "l1DataUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.000053188118222016,
+      "median": 0.0000530946716,
+      "p95": 0.00005342916803108,
+      "p99": 0.00005342916803108,
+      "min": 0.0000530946716,
+      "max": 0.00005342916803108
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "transferOwnership",
+    "metric": "totalUsd",
+    "unit": "USD",
+    "stats": {
+      "count": 5,
+      "mean": 0.001473163148481768,
+      "median": 0.00147270148780128,
+      "p95": 0.00147955054065148,
+      "p99": 0.00147955054065148,
+      "min": 0.0014693025888,
+      "max": 0.00147955054065148
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "transferOwnership",
+    "metric": "l2ExecutionFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 622070317200,
+      "median": 621909008000,
+      "p95": 624762940000,
+      "p99": 624762940000,
+      "min": 620420000000,
+      "max": 624762940000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "transferOwnership",
+    "metric": "l1DataFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 23300937600,
+      "median": 23260000000,
+      "p95": 23406538000,
+      "p99": 23406538000,
+      "min": 23260000000,
+      "max": 23406538000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "transferOwnership",
+    "metric": "totalFeeWei",
+    "unit": "wei",
+    "stats": {
+      "count": 5,
+      "mean": 645371254800,
+      "median": 645169008000,
+      "p95": 648169478000,
+      "p99": 648169478000,
+      "min": 643680000000,
+      "max": 648169478000
+    }
+  },
+  {
+    "source": "registry",
+    "network": "arbitrum",
+    "op": "transferOwnership",
+    "metric": "serializedTxBytes",
+    "unit": "bytes",
+    "stats": {
+      "count": 5,
+      "mean": 240,
+      "median": 240,
+      "p95": 240,
+      "p99": 240,
+      "min": 240,
+      "max": 240
+    }
+  },
+  {
+    "source": "registry",
+    "network": "anvil",
+    "op": "verifyVersion",
+    "metric": "rpcLatencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 5,
+      "mean": 14.387116600000445,
+      "median": 14.358624999999847,
+      "p95": 15.23816700000043,
+      "p99": 15.23816700000043,
+      "min": 12.922499999998763,
+      "max": 15.23816700000043
+    }
+  },
+  {
+    "source": "sigstore",
+    "network": "rekor-public",
+    "op": "fetchLogInfo",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 449.4050517999995,
+      "median": 285.6654579999995,
+      "p95": 1548.1421249999985,
+      "p99": 1945.7397920000003,
+      "min": 196.31433300000208,
+      "max": 1945.7397920000003
+    }
+  },
+  {
+    "source": "sigstore",
+    "network": "rekor-public",
+    "op": "searchByHash",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 247.56656501999984,
+      "median": 208.58045899999706,
+      "p95": 469.37354099999357,
+      "p99": 614.2353329999969,
+      "min": 162.9312079999945,
+      "max": 614.2353329999969
+    }
+  },
+  {
+    "source": "sigstore",
+    "network": "rekor-public",
+    "op": "fetchLogEntry",
+    "metric": "latencyMs",
+    "unit": "ms",
+    "stats": {
+      "count": 50,
+      "mean": 403.4290566400001,
+      "median": 305.1491249999999,
+      "p95": 1033.6553749999985,
+      "p99": 1193.166083,
+      "min": 200.0101250000007,
+      "max": 1193.166083
+    }
+  }
+]

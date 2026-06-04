@@ -1,0 +1,3307 @@
+{
+  "startedAt": "2026-05-12T18:56:53.811Z",
+  "finishedAt": "2026-05-12T18:57:24.521Z",
+  "registry": "https://registry.npmjs.org",
+  "runs": [
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.268749999999955,
+      "timestamp": "2026-05-12T18:56:54.997Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 296.60679200000004,
+      "timestamp": "2026-05-12T18:56:55.298Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 49.93895799999996,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:55.350Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 131.5106249999999,
+      "timestamp": "2026-05-12T18:56:55.482Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 248.06554200000005,
+      "timestamp": "2026-05-12T18:56:55.742Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 30.796374999999898,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:55.774Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 54.62529200000017,
+      "timestamp": "2026-05-12T18:56:55.829Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 424.4890830000004,
+      "timestamp": "2026-05-12T18:56:56.734Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 27.971250000000055,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:56.762Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 36.870208000000275,
+      "timestamp": "2026-05-12T18:56:56.799Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 31.27316699999983,
+      "timestamp": "2026-05-12T18:56:56.832Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 54.18116699999973,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:56.888Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 43.0165420000003,
+      "timestamp": "2026-05-12T18:56:56.931Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.310291000000234,
+      "timestamp": "2026-05-12T18:56:56.962Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 96.6097920000002,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:57.059Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 56.24554100000023,
+      "timestamp": "2026-05-12T18:56:57.115Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 30.100124999999935,
+      "timestamp": "2026-05-12T18:56:57.270Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.98174999999992,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:57.295Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.778416000000107,
+      "timestamp": "2026-05-12T18:56:57.326Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 25.756792000000132,
+      "timestamp": "2026-05-12T18:56:57.354Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 54.9822079999999,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:57.411Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 32.747583000000304,
+      "timestamp": "2026-05-12T18:56:57.444Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.495499999999993,
+      "timestamp": "2026-05-12T18:56:57.491Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 116.31712500000003,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:57.608Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 52.41304200000013,
+      "timestamp": "2026-05-12T18:56:57.661Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.954375000000255,
+      "timestamp": "2026-05-12T18:56:57.812Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 30.765540999999757,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:57.843Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 33.943083000000115,
+      "timestamp": "2026-05-12T18:56:57.877Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 25.491542000000663,
+      "timestamp": "2026-05-12T18:56:57.904Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 56.22833300000002,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:57.961Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 42.54804200000035,
+      "timestamp": "2026-05-12T18:56:58.004Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 95.40820799999983,
+      "timestamp": "2026-05-12T18:56:58.107Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.72741700000006,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:58.133Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 27.925584000000526,
+      "timestamp": "2026-05-12T18:56:58.161Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.748083000000406,
+      "timestamp": "2026-05-12T18:56:58.363Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 28.586750000000393,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:58.392Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.27337499999976,
+      "timestamp": "2026-05-12T18:56:58.423Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.800874999999905,
+      "timestamp": "2026-05-12T18:56:58.448Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 81.08095799999955,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:58.530Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 101.40429099999983,
+      "timestamp": "2026-05-12T18:56:58.632Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.61016699999982,
+      "timestamp": "2026-05-12T18:56:58.888Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.30962499999987,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:58.918Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 56.43583299999955,
+      "timestamp": "2026-05-12T18:56:58.975Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 27.569124999999985,
+      "timestamp": "2026-05-12T18:56:59.243Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.071583000000828,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:59.268Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 32.47212500000023,
+      "timestamp": "2026-05-12T18:56:59.301Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 30.12237499999992,
+      "timestamp": "2026-05-12T18:56:59.332Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 54.36220899999989,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:59.387Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 45.790624999999636,
+      "timestamp": "2026-05-12T18:56:59.433Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 21.564249999999447,
+      "timestamp": "2026-05-12T18:56:59.458Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.48358300000018,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:59.484Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 52.8226250000007,
+      "timestamp": "2026-05-12T18:56:59.537Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 34.03887499999928,
+      "timestamp": "2026-05-12T18:56:59.781Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.28912500000024,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:59.808Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.691624999999476,
+      "timestamp": "2026-05-12T18:56:59.840Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 27.112500000000182,
+      "timestamp": "2026-05-12T18:56:59.869Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 51.17112499999985,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:56:59.922Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 48.23579199999949,
+      "timestamp": "2026-05-12T18:56:59.970Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.68066699999963,
+      "timestamp": "2026-05-12T18:57:00.000Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 28.21166700000049,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:00.029Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 53.351584,
+      "timestamp": "2026-05-12T18:57:00.082Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 31.56012499999997,
+      "timestamp": "2026-05-12T18:57:00.315Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.382332999999562,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:00.339Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.630583000000115,
+      "timestamp": "2026-05-12T18:57:00.371Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 26.866124999999556,
+      "timestamp": "2026-05-12T18:57:00.401Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 50.69037500000013,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:00.453Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 46.062291999999616,
+      "timestamp": "2026-05-12T18:57:00.499Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.40191700000014,
+      "timestamp": "2026-05-12T18:57:00.529Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 21.55016700000033,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:00.551Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 55.70049999999992,
+      "timestamp": "2026-05-12T18:57:00.607Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.341834000000745,
+      "timestamp": "2026-05-12T18:57:00.834Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.862082999999984,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:00.862Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 33.341167000000496,
+      "timestamp": "2026-05-12T18:57:00.895Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 26.871125000000575,
+      "timestamp": "2026-05-12T18:57:00.925Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 48.10041699999965,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:00.974Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 27.37804099999994,
+      "timestamp": "2026-05-12T18:57:01.001Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 30.784459000000425,
+      "timestamp": "2026-05-12T18:57:01.060Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 33.76916700000038,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:01.094Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 60.178750000000036,
+      "timestamp": "2026-05-12T18:57:01.154Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 27.280374999999367,
+      "timestamp": "2026-05-12T18:57:01.404Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.57745799999975,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:01.431Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.332249999999476,
+      "timestamp": "2026-05-12T18:57:01.465Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 26.414999999999964,
+      "timestamp": "2026-05-12T18:57:01.494Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 54.122709000000214,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:01.549Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 40.14129200000025,
+      "timestamp": "2026-05-12T18:57:01.589Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 21.887917000000016,
+      "timestamp": "2026-05-12T18:57:01.618Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.65570800000023,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:01.643Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 134.79091700000026,
+      "timestamp": "2026-05-12T18:57:01.777Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 21.470875000000888,
+      "timestamp": "2026-05-12T18:57:01.939Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.128582999999708,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:01.966Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 30.913957999999184,
+      "timestamp": "2026-05-12T18:57:01.997Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 20.632041999999274,
+      "timestamp": "2026-05-12T18:57:02.021Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 55.91324999999961,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:02.078Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 47.13233300000138,
+      "timestamp": "2026-05-12T18:57:02.125Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.076916999998502,
+      "timestamp": "2026-05-12T18:57:02.157Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 30.30249999999978,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:02.188Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 114.13845899999978,
+      "timestamp": "2026-05-12T18:57:02.302Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 21.86920800000007,
+      "timestamp": "2026-05-12T18:57:02.455Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.41125000000102,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:02.479Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.67958400000134,
+      "timestamp": "2026-05-12T18:57:02.514Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 20.985082999999577,
+      "timestamp": "2026-05-12T18:57:02.537Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 46.60579200000029,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:02.584Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 40.11099999999897,
+      "timestamp": "2026-05-12T18:57:02.624Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.05933399999958,
+      "timestamp": "2026-05-12T18:57:02.653Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.3773340000007,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:02.679Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 146.19470899999942,
+      "timestamp": "2026-05-12T18:57:02.825Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.81366700000035,
+      "timestamp": "2026-05-12T18:57:03.013Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.356291999998575,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:03.037Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 36.38366700000006,
+      "timestamp": "2026-05-12T18:57:03.074Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 24.514917000000423,
+      "timestamp": "2026-05-12T18:57:03.099Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 47.315458000000945,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:03.147Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 51.60770799999955,
+      "timestamp": "2026-05-12T18:57:03.199Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.53849999999875,
+      "timestamp": "2026-05-12T18:57:03.229Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 27.116792000000714,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:03.257Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 96.61320899999919,
+      "timestamp": "2026-05-12T18:57:03.353Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 33.865499999999884,
+      "timestamp": "2026-05-12T18:57:03.581Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.460291999999754,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:03.607Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 33.10054200000013,
+      "timestamp": "2026-05-12T18:57:03.641Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 26.128708000000188,
+      "timestamp": "2026-05-12T18:57:03.669Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 48.317957999999635,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:03.718Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 64.32308399999965,
+      "timestamp": "2026-05-12T18:57:03.783Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.70508400000108,
+      "timestamp": "2026-05-12T18:57:03.901Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 31.333334000000832,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:03.933Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 55.086083000000144,
+      "timestamp": "2026-05-12T18:57:03.988Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.666916999998648,
+      "timestamp": "2026-05-12T18:57:04.132Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 29.959916999998313,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:04.163Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 32.654082999999446,
+      "timestamp": "2026-05-12T18:57:04.196Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.70354099999895,
+      "timestamp": "2026-05-12T18:57:04.221Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 52.41337500000009,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:04.275Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 124.51179100000081,
+      "timestamp": "2026-05-12T18:57:04.400Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.87566599999991,
+      "timestamp": "2026-05-12T18:57:04.465Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 28.59754199999952,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:04.495Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 56.48133299999972,
+      "timestamp": "2026-05-12T18:57:04.551Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.753624999999374,
+      "timestamp": "2026-05-12T18:57:04.705Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 33.067292000001544,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:04.739Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 33.54808299999968,
+      "timestamp": "2026-05-12T18:57:04.773Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 24.26537500000086,
+      "timestamp": "2026-05-12T18:57:04.799Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 397.9524170000004,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:05.198Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 43.33324999999968,
+      "timestamp": "2026-05-12T18:57:05.241Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 21.291957999999795,
+      "timestamp": "2026-05-12T18:57:05.269Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.178749999999127,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:05.295Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 250.79475000000093,
+      "timestamp": "2026-05-12T18:57:05.545Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.02299999999923,
+      "timestamp": "2026-05-12T18:57:05.707Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.977499999999054,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:05.734Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 32.61300000000119,
+      "timestamp": "2026-05-12T18:57:05.767Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.737374999998792,
+      "timestamp": "2026-05-12T18:57:05.791Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 47.78662500000064,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:05.840Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 131.30291699999907,
+      "timestamp": "2026-05-12T18:57:05.971Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.575833000000785,
+      "timestamp": "2026-05-12T18:57:06.218Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.12591599999905,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:06.245Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 53.63591599999927,
+      "timestamp": "2026-05-12T18:57:06.298Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.41558299999997,
+      "timestamp": "2026-05-12T18:57:06.523Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.896875000000364,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:06.548Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 32.458708000000115,
+      "timestamp": "2026-05-12T18:57:06.580Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 21.693833999999697,
+      "timestamp": "2026-05-12T18:57:06.604Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 48.11545800000022,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:06.653Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 21.383834000000206,
+      "timestamp": "2026-05-12T18:57:06.674Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.921374999999898,
+      "timestamp": "2026-05-12T18:57:06.726Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.454624999998487,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:06.753Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 56.08204099999966,
+      "timestamp": "2026-05-12T18:57:06.809Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.534499999999753,
+      "timestamp": "2026-05-12T18:57:07.311Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.202541999999085,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:07.338Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 30.675624999999854,
+      "timestamp": "2026-05-12T18:57:07.369Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 29.722082999998747,
+      "timestamp": "2026-05-12T18:57:07.401Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 48.54337499999929,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:07.450Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 94.69783300000017,
+      "timestamp": "2026-05-12T18:57:07.545Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.8784169999999,
+      "timestamp": "2026-05-12T18:57:07.620Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.122707999998966,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:07.644Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 57.48174999999901,
+      "timestamp": "2026-05-12T18:57:07.702Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 28.42937499999971,
+      "timestamp": "2026-05-12T18:57:07.963Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 105.05320799999936,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:08.069Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.11333300000115,
+      "timestamp": "2026-05-12T18:57:08.103Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 27.298416000001453,
+      "timestamp": "2026-05-12T18:57:08.132Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 52.14337499999965,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:08.185Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 53.63366700000006,
+      "timestamp": "2026-05-12T18:57:08.239Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.722999999999956,
+      "timestamp": "2026-05-12T18:57:08.275Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.488749999998618,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:08.301Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 61.760291999999026,
+      "timestamp": "2026-05-12T18:57:08.363Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.043832999999722,
+      "timestamp": "2026-05-12T18:57:08.651Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.26770899999974,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:08.677Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.54349999999977,
+      "timestamp": "2026-05-12T18:57:08.712Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 23.77087500000016,
+      "timestamp": "2026-05-12T18:57:08.739Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 49.018458000000464,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:08.788Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 33.53620899999987,
+      "timestamp": "2026-05-12T18:57:08.822Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.399583000000348,
+      "timestamp": "2026-05-12T18:57:08.861Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 28.15345900000102,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:08.890Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 30.201625000001513,
+      "timestamp": "2026-05-12T18:57:08.920Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 21.80687500000022,
+      "timestamp": "2026-05-12T18:57:09.203Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.929708000001483,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:09.228Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 32.569250000000466,
+      "timestamp": "2026-05-12T18:57:09.261Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 23.803791999998793,
+      "timestamp": "2026-05-12T18:57:09.286Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 48.9431250000016,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:09.336Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 47.235915999999634,
+      "timestamp": "2026-05-12T18:57:09.383Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.09308299999975,
+      "timestamp": "2026-05-12T18:57:09.414Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.383042000001296,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:09.439Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 45.17016700000022,
+      "timestamp": "2026-05-12T18:57:09.484Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 22.26800000000003,
+      "timestamp": "2026-05-12T18:57:09.727Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.794041999999536,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:09.753Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 33.6762920000001,
+      "timestamp": "2026-05-12T18:57:09.787Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 24.242958000000726,
+      "timestamp": "2026-05-12T18:57:09.814Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 50.019625000000815,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:09.865Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 45.614417000000685,
+      "timestamp": "2026-05-12T18:57:09.911Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.815959000001385,
+      "timestamp": "2026-05-12T18:57:09.940Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.118458999999348,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:09.963Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 25.80645899999945,
+      "timestamp": "2026-05-12T18:57:09.989Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.61554199999955,
+      "timestamp": "2026-05-12T18:57:10.250Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.132375000001048,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:10.276Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 38.28516700000182,
+      "timestamp": "2026-05-12T18:57:10.315Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 23.78270799999882,
+      "timestamp": "2026-05-12T18:57:10.341Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 49.825958000001265,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:10.391Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 41.49474999999802,
+      "timestamp": "2026-05-12T18:57:10.433Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 21.118375000001834,
+      "timestamp": "2026-05-12T18:57:10.460Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.84116599999834,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:10.486Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 57.49266599999828,
+      "timestamp": "2026-05-12T18:57:10.544Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.484416999999667,
+      "timestamp": "2026-05-12T18:57:10.782Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 28.376667000000452,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:10.811Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 35.916417000000365,
+      "timestamp": "2026-05-12T18:57:10.847Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 24.7867499999993,
+      "timestamp": "2026-05-12T18:57:10.873Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 50.012957999999344,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:10.924Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 50.32466700000077,
+      "timestamp": "2026-05-12T18:57:10.974Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 30.52191600000151,
+      "timestamp": "2026-05-12T18:57:11.013Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 22.656416999998328,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:11.036Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 69.32533399999738,
+      "timestamp": "2026-05-12T18:57:11.105Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.709499999997206,
+      "timestamp": "2026-05-12T18:57:11.335Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.842082999999548,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:11.361Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.456083000000945,
+      "timestamp": "2026-05-12T18:57:11.393Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.272124999999505,
+      "timestamp": "2026-05-12T18:57:11.416Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 51.69479099999808,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:11.468Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 39.855249999996886,
+      "timestamp": "2026-05-12T18:57:11.508Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 22.68470900000102,
+      "timestamp": "2026-05-12T18:57:11.537Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 29.061291000001802,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:11.567Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 56.62491600000067,
+      "timestamp": "2026-05-12T18:57:11.623Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 32.18133300000045,
+      "timestamp": "2026-05-12T18:57:11.848Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 29.051625000000058,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:11.878Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 33.26204199999847,
+      "timestamp": "2026-05-12T18:57:11.911Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 24.65691599999991,
+      "timestamp": "2026-05-12T18:57:11.937Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 52.19383300000118,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:11.990Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 43.726582999999664,
+      "timestamp": "2026-05-12T18:57:12.033Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.82091600000058,
+      "timestamp": "2026-05-12T18:57:12.063Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 31.857374999999593,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:12.095Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 58.24750000000131,
+      "timestamp": "2026-05-12T18:57:12.154Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 27.37133299999914,
+      "timestamp": "2026-05-12T18:57:12.381Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.74683300000106,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:12.406Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.845124999999825,
+      "timestamp": "2026-05-12T18:57:12.438Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.967250000001513,
+      "timestamp": "2026-05-12T18:57:12.464Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 55.20866699999897,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:12.520Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 42.1742090000007,
+      "timestamp": "2026-05-12T18:57:12.562Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 27.778041000001394,
+      "timestamp": "2026-05-12T18:57:12.599Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.712374999999156,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:12.624Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 62.11854200000016,
+      "timestamp": "2026-05-12T18:57:12.686Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 27.764333000002807,
+      "timestamp": "2026-05-12T18:57:12.912Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.198624999997264,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:12.939Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.53845900000306,
+      "timestamp": "2026-05-12T18:57:12.974Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.801707999999053,
+      "timestamp": "2026-05-12T18:57:12.998Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 50.07516599999872,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:13.049Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 41.583707999998296,
+      "timestamp": "2026-05-12T18:57:13.090Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 22.810708000000886,
+      "timestamp": "2026-05-12T18:57:13.118Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 27.0479579999992,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:13.146Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 57.66704199999731,
+      "timestamp": "2026-05-12T18:57:13.203Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 22.446332999999868,
+      "timestamp": "2026-05-12T18:57:13.432Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.594750000000204,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:13.458Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 33.24645900000178,
+      "timestamp": "2026-05-12T18:57:13.491Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 24.903583999999682,
+      "timestamp": "2026-05-12T18:57:13.520Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 55.009249999999156,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:13.576Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 44.36395799999809,
+      "timestamp": "2026-05-12T18:57:13.620Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.768082999999024,
+      "timestamp": "2026-05-12T18:57:13.653Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.04449999999997,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:13.679Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 56.31995800000004,
+      "timestamp": "2026-05-12T18:57:13.735Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.30320799999754,
+      "timestamp": "2026-05-12T18:57:13.967Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 32.66279099999883,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:14.001Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.511875000000146,
+      "timestamp": "2026-05-12T18:57:14.036Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.255207999998674,
+      "timestamp": "2026-05-12T18:57:14.061Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 51.392125000002125,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:14.113Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 39.701333000000886,
+      "timestamp": "2026-05-12T18:57:14.153Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.60349999999744,
+      "timestamp": "2026-05-12T18:57:14.186Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.185333000001265,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:14.213Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 58.05662500000108,
+      "timestamp": "2026-05-12T18:57:14.271Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.031834000001254,
+      "timestamp": "2026-05-12T18:57:14.503Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.9320000000007,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:14.528Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 30.205583999999362,
+      "timestamp": "2026-05-12T18:57:14.558Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 23.885708999998315,
+      "timestamp": "2026-05-12T18:57:14.584Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 45.86045899999954,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:14.631Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 40.45158300000185,
+      "timestamp": "2026-05-12T18:57:14.671Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.306832999998733,
+      "timestamp": "2026-05-12T18:57:14.701Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.55016599999726,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:14.726Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 51.309000000001106,
+      "timestamp": "2026-05-12T18:57:14.778Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 20.3715830000001,
+      "timestamp": "2026-05-12T18:57:15.011Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.504915999998047,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:15.036Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.391625000000204,
+      "timestamp": "2026-05-12T18:57:15.071Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 24.89241700000275,
+      "timestamp": "2026-05-12T18:57:15.098Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 49.538957999997365,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:15.148Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 41.32758299999841,
+      "timestamp": "2026-05-12T18:57:15.189Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 21.106041999999434,
+      "timestamp": "2026-05-12T18:57:15.217Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 22.578959000002214,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:15.239Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 52.33295799999905,
+      "timestamp": "2026-05-12T18:57:15.292Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.59625000000233,
+      "timestamp": "2026-05-12T18:57:15.536Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.366291999998793,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:15.563Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.384375000001455,
+      "timestamp": "2026-05-12T18:57:15.598Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 26.680334000000585,
+      "timestamp": "2026-05-12T18:57:15.627Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 48.24395799999911,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:15.676Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 45.95045899999968,
+      "timestamp": "2026-05-12T18:57:15.722Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.056790999999066,
+      "timestamp": "2026-05-12T18:57:15.752Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 29.21704200000022,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:15.782Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 25.87879100000282,
+      "timestamp": "2026-05-12T18:57:15.808Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.31645800000115,
+      "timestamp": "2026-05-12T18:57:16.066Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 22.459584000000177,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:16.088Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.68870799999786,
+      "timestamp": "2026-05-12T18:57:16.123Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 25.27587499999936,
+      "timestamp": "2026-05-12T18:57:16.150Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 57.52795799999876,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:16.208Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 42.24895800000013,
+      "timestamp": "2026-05-12T18:57:16.250Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 20.862334000001283,
+      "timestamp": "2026-05-12T18:57:16.276Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.488792000000103,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:16.303Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 57.514665999999124,
+      "timestamp": "2026-05-12T18:57:16.360Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.469833999999537,
+      "timestamp": "2026-05-12T18:57:16.598Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 28.631083000000217,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:16.628Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 29.79558299999917,
+      "timestamp": "2026-05-12T18:57:16.658Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 34.61866699999882,
+      "timestamp": "2026-05-12T18:57:16.695Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 47.313499999996566,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:16.743Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 40.3271670000031,
+      "timestamp": "2026-05-12T18:57:16.783Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 29.43695800000205,
+      "timestamp": "2026-05-12T18:57:16.819Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 29.0087910000002,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:16.849Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 132.249917000001,
+      "timestamp": "2026-05-12T18:57:16.981Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 22.98649999999907,
+      "timestamp": "2026-05-12T18:57:17.138Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 44.291291000001365,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:17.183Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 29.56012499999997,
+      "timestamp": "2026-05-12T18:57:17.213Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.686916999999085,
+      "timestamp": "2026-05-12T18:57:17.237Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 48.473917000002984,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:17.287Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 43.812167000000045,
+      "timestamp": "2026-05-12T18:57:17.330Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.784041999999317,
+      "timestamp": "2026-05-12T18:57:17.361Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.426416999998764,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:17.386Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 124.30633300000045,
+      "timestamp": "2026-05-12T18:57:17.511Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.85004200000185,
+      "timestamp": "2026-05-12T18:57:17.663Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.750499999998283,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:17.688Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 34.12054200000057,
+      "timestamp": "2026-05-12T18:57:17.722Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 26.265375000002678,
+      "timestamp": "2026-05-12T18:57:17.752Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 53.50475000000006,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:17.807Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 46.756374999997206,
+      "timestamp": "2026-05-12T18:57:17.854Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.400166999999783,
+      "timestamp": "2026-05-12T18:57:17.886Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.27979200000118,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:17.910Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 118.72600000000239,
+      "timestamp": "2026-05-12T18:57:18.029Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.78741599999921,
+      "timestamp": "2026-05-12T18:57:18.199Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.332957999999053,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:18.222Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 32.004291999997804,
+      "timestamp": "2026-05-12T18:57:18.254Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 25.084124999997584,
+      "timestamp": "2026-05-12T18:57:18.282Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 53.70887500000026,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:18.337Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 46.32420800000182,
+      "timestamp": "2026-05-12T18:57:18.383Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 22.359375,
+      "timestamp": "2026-05-12T18:57:18.414Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.94879100000253,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:18.439Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 115.50854199999958,
+      "timestamp": "2026-05-12T18:57:18.554Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 21.833290999999008,
+      "timestamp": "2026-05-12T18:57:18.718Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 27.662083999999595,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:18.746Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.54899999999907,
+      "timestamp": "2026-05-12T18:57:18.777Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 36.58241700000144,
+      "timestamp": "2026-05-12T18:57:18.817Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 47.24987500000134,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:18.866Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 41.56054099999892,
+      "timestamp": "2026-05-12T18:57:18.908Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.193875000000844,
+      "timestamp": "2026-05-12T18:57:18.940Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.304333000000042,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:18.966Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 112.24770799999897,
+      "timestamp": "2026-05-12T18:57:19.078Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 22.452416000000085,
+      "timestamp": "2026-05-12T18:57:19.240Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.2065419999999,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:19.265Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 32.12195900000006,
+      "timestamp": "2026-05-12T18:57:19.297Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 27.29925000000003,
+      "timestamp": "2026-05-12T18:57:19.327Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 49.97558299999946,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:19.377Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 45.28495800000019,
+      "timestamp": "2026-05-12T18:57:19.423Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.68962499999907,
+      "timestamp": "2026-05-12T18:57:19.455Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.706207999999606,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:19.482Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 122.35649999999805,
+      "timestamp": "2026-05-12T18:57:19.604Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 21.94158299999981,
+      "timestamp": "2026-05-12T18:57:19.755Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.134375000001455,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:19.779Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.738874999999098,
+      "timestamp": "2026-05-12T18:57:19.811Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 24.001541999998153,
+      "timestamp": "2026-05-12T18:57:19.836Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 48.98383300000205,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:19.885Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 42.486417000000074,
+      "timestamp": "2026-05-12T18:57:19.928Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.57062500000029,
+      "timestamp": "2026-05-12T18:57:19.958Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.642542000001413,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:19.984Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 48.21370900000329,
+      "timestamp": "2026-05-12T18:57:20.033Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 27.3226250000007,
+      "timestamp": "2026-05-12T18:57:20.266Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 27.60870900000009,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:20.294Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 29.85741599999892,
+      "timestamp": "2026-05-12T18:57:20.324Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.36149999999907,
+      "timestamp": "2026-05-12T18:57:20.350Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 50.913416999999754,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:20.403Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 43.97966699999961,
+      "timestamp": "2026-05-12T18:57:20.447Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.88575000000128,
+      "timestamp": "2026-05-12T18:57:20.480Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.547041999998328,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:20.505Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 56.12645800000246,
+      "timestamp": "2026-05-12T18:57:20.561Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 21.827417000000423,
+      "timestamp": "2026-05-12T18:57:20.808Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 26.62237499999901,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:20.836Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 30.19066600000224,
+      "timestamp": "2026-05-12T18:57:20.866Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 24.893584000001283,
+      "timestamp": "2026-05-12T18:57:20.893Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 46.563208000003215,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:20.941Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 46.0993750000016,
+      "timestamp": "2026-05-12T18:57:20.987Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.9587500000016,
+      "timestamp": "2026-05-12T18:57:21.019Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 21.559000000001106,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:21.041Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 135.01095899999927,
+      "timestamp": "2026-05-12T18:57:21.176Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 22.82970799999748,
+      "timestamp": "2026-05-12T18:57:21.341Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 28.607540999997582,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:21.370Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 33.73775000000023,
+      "timestamp": "2026-05-12T18:57:21.404Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 21.395042000000103,
+      "timestamp": "2026-05-12T18:57:21.427Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 52.306124999999156,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:21.480Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 38.81770800000231,
+      "timestamp": "2026-05-12T18:57:21.518Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 26.317833000000974,
+      "timestamp": "2026-05-12T18:57:21.552Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 27.49674999999843,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:21.580Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 119.69816700000229,
+      "timestamp": "2026-05-12T18:57:21.700Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 21.70733300000211,
+      "timestamp": "2026-05-12T18:57:21.871Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 27.139375000002474,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:21.899Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 30.893708999999944,
+      "timestamp": "2026-05-12T18:57:21.930Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 23.253042000000278,
+      "timestamp": "2026-05-12T18:57:21.955Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 49.467915999997786,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:22.005Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 46.62458300000071,
+      "timestamp": "2026-05-12T18:57:22.051Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 22.923541000000114,
+      "timestamp": "2026-05-12T18:57:22.080Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.330958000002283,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:22.104Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 29.18225000000166,
+      "timestamp": "2026-05-12T18:57:22.133Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.319292000000132,
+      "timestamp": "2026-05-12T18:57:22.385Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.37879200000316,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:22.410Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 36.04795899999954,
+      "timestamp": "2026-05-12T18:57:22.447Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 25.82745799999975,
+      "timestamp": "2026-05-12T18:57:22.474Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 50.53483300000153,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:22.525Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 34.98241699999926,
+      "timestamp": "2026-05-12T18:57:22.560Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 27.99829200000022,
+      "timestamp": "2026-05-12T18:57:22.614Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.880457999999635,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:22.639Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 109.32633300000089,
+      "timestamp": "2026-05-12T18:57:22.748Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 20.730875000001106,
+      "timestamp": "2026-05-12T18:57:22.908Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 33.30958399999872,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:22.941Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.63483300000007,
+      "timestamp": "2026-05-12T18:57:22.973Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 21.756874999999127,
+      "timestamp": "2026-05-12T18:57:22.996Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 51.193999999999505,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:23.048Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 43.27929199999926,
+      "timestamp": "2026-05-12T18:57:23.091Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 28.26508399999875,
+      "timestamp": "2026-05-12T18:57:23.127Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.603917000000365,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:23.153Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 118.84183300000223,
+      "timestamp": "2026-05-12T18:57:23.272Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 23.05683399999907,
+      "timestamp": "2026-05-12T18:57:23.450Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 25.98304199999984,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:23.476Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.81091699999888,
+      "timestamp": "2026-05-12T18:57:23.508Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 21.842790999999124,
+      "timestamp": "2026-05-12T18:57:23.532Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 50.55737500000032,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:23.583Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 39.074500000002445,
+      "timestamp": "2026-05-12T18:57:23.622Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.572041999999783,
+      "timestamp": "2026-05-12T18:57:23.653Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 24.726584000000003,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:23.678Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 119.64199999999983,
+      "timestamp": "2026-05-12T18:57:23.798Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 28.90549999999712,
+      "timestamp": "2026-05-12T18:57:23.971Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 28.056375000000116,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:23.999Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "lodash",
+      "latencyMs": 31.457666000002064,
+      "timestamp": "2026-05-12T18:57:24.031Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 22.39783300000272,
+      "timestamp": "2026-05-12T18:57:24.056Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "lodash",
+      "version": "4.18.1",
+      "latencyMs": 53.113665999997465,
+      "bytes": 315640,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:24.109Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "express",
+      "latencyMs": 46.36750000000029,
+      "timestamp": "2026-05-12T18:57:24.156Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 23.689540999999736,
+      "timestamp": "2026-05-12T18:57:24.185Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "express",
+      "version": "5.2.1",
+      "latencyMs": 25.407624999999825,
+      "bytes": 22560,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:24.211Z"
+    },
+    {
+      "op": "metadataFetch",
+      "pkg": "react",
+      "latencyMs": 109.25866699999824,
+      "timestamp": "2026-05-12T18:57:24.321Z"
+    },
+    {
+      "op": "versionFetch",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.56329199999891,
+      "timestamp": "2026-05-12T18:57:24.495Z"
+    },
+    {
+      "op": "tarballDownloadAndHash",
+      "pkg": "react",
+      "version": "19.2.6",
+      "latencyMs": 24.869416000001365,
+      "bytes": 24804,
+      "hashMatch": true,
+      "timestamp": "2026-05-12T18:57:24.520Z"
+    }
+  ]
+}
